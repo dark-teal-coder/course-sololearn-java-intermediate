@@ -13,7 +13,7 @@ This repository contains some course materials for my Bachelor of Arts degree. E
 
 ## Course List  
 
-- LT3210 Electronic Publishing
+- Electronic Publishing
   - Period: Fall 2016-2017
-- LT3233 Computational Linguistics 
+- Computational Linguistics 
   - Period: Fall 2017-2018 
