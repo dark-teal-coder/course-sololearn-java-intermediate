@@ -1,4 +1,4 @@
-# LT3233 Computational Linguistics
+# Computational Linguistics
 
 ## Computer Architecture
 
