@@ -26,7 +26,7 @@ Time to get serious and really see what Java (and you!) can do! In this course y
 
 ## Table of Contents
 
-- [Module 01: Classes and Objects]()
+- [Module 01: Classes and Objects](https://github.com/dark-teal-coder/course-sololearn-java-intermediate/blob/main/course-note-sololearn-java-intermediate.md#module-01-classes-and-objects)
 - [Module 02: More on Classes]()
 - [Module 03: Exceptions, Lists, Threads & Files]()
 
