@@ -13,3 +13,14 @@
 ---
 
 &nbsp;
+
+# Java Intermediate
+
+Time to get serious and really see what Java (and you!) can do! In this course you’ll learn some concepts related to Object-Oriented Programming (OOP), Collections, and working with files. You’ll be a pro in no time!
+
+&nbsp;
+
+---
+
+&nbsp;
+
