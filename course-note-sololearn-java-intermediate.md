@@ -24,3 +24,32 @@ Time to get serious and really see what Java (and you!) can do! In this course y
 
 &nbsp;
 
+## Table of Contents
+
+- [Module 01: Classes and Objects]()
+- [Module 02: More on Classes]()
+- [Module 03: Exceptions, Lists, Threads & Files]()
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## Module 01: Classes and Objects
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## Module 02: More on Classes
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## Module 03: Exceptions, Lists, Threads & Files
