@@ -38,6 +38,30 @@ Time to get serious and really see what Java (and you!) can do! In this course y
 
 ## Module 01: Classes and Objects
 
+### Lesson 01.01: Object-Oriented Programming
+
+### Lesson 01.02: Creating Classes & Objects
+
+### Lesson 01.03: Class Attributes
+
+### Lesson 01.04: Access Modifiers
+
+### Lesson 01.05: Getters and Setters
+
+### Lesson 01.06: Constructors
+
+### Lesson 01.07: Value & Reference Types
+
+### Lesson 01.08: The Math Class
+
+### Lesson 01.09: Static
+
+### Lesson 01.10: Final
+
+### Lesson 01.11: Packages
+
+### Quiz 01: Module 1 Quiz
+
 &nbsp;
 
 ---
