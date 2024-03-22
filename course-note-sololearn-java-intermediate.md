@@ -70,6 +70,34 @@ Time to get serious and really see what Java (and you!) can do! In this course y
 
 ## Module 02: More on Classes
 
+### Lesson 02.01: Encapsulation
+
+### Lesson 02.02: Inheritance
+
+### Lesson 02.03: Polymorphism
+
+### Lesson 02.04: Overriding & Overloading
+
+### Lesson 02.05: Abstract Classes
+
+### Lesson 02.06: Interfaces
+
+### Lesson 02.07: Casting
+
+### Lesson 02.08: Downcasting
+
+### Lesson 02.09: Anonymous Classes
+
+### Lesson 02.10: Inner Classes
+
+### Lesson 02.11: The equals() method
+
+### Lesson 02.12: Enums
+
+### Lesson 02.13: Using the Java API
+
+### Quiz 02: Module 2 Quiz
+
 &nbsp;
 
 ---
