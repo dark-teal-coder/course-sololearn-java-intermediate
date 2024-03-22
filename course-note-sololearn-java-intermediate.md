@@ -105,3 +105,31 @@ Time to get serious and really see what Java (and you!) can do! In this course y
 &nbsp;
 
 ## Module 03: Exceptions, Lists, Threads & Files
+
+### Lesson 03.01: Exception Handling
+
+### Lesson 03.02: Multiple Exceptions
+
+### Lesson 03.03: Threads
+
+### Lesson 03.04: Runtime vs. Checked Exceptions
+
+### Lesson 03.05: ArrayList
+
+### Lesson 03.06: LinkedLists
+
+### Lesson 03.07: HashMap
+
+### Lesson 03.08: Sets
+
+### Lesson 03.09: Sorting Lists
+
+### Lesson 03.10: Iterators
+
+### Lesson 03.11: Working with Files
+
+### Lesson 03.12: Reading a File
+
+### Lesson 03.13: Creating & Writing Files
+
+### Quiz 03: Module 3 Quiz
