@@ -40,6 +40,26 @@ Time to get serious and really see what Java (and you!) can do! In this course y
 
 ### Lesson 01.01: Object-Oriented Programming
 
+#### Object-Orientation
+
+Java uses Object-Oriented Programming (OOP), a programming style that is intended to make thinking about programming closer to thinking about the real world.
+
+In OOP, each object is an independent unit with a unique identity, just as objects in the real world are.
+
+> :warning: An apple is an object; so is a mug. Each has its unique identity. It's possible to have two mugs that look identical, but they are still separate, unique objects.
+
+Objects also have characteristics, which are used to describe them.
+
+For example, a car can be red or blue, a mug can be full or empty, and so on. These characteristics are also called attributes. An attribute describes the current state of an object.
+
+In the real world, each object behaves in its own way. The car moves, the phone rings, and so on.
+
+The same applies to objects: behavior is specific to the object's type.
+
+> :warning: In summary, in object oriented programming, each object has three dimensions: identity, attributes, and behavior. <br/> Attributes describe the object's current state, and what the object is capable of doing is demonstrated through the object's behavior.
+
+
+
 ### Lesson 01.02: Creating Classes & Objects
 
 ### Lesson 01.03: Class Attributes
