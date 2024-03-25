@@ -74,6 +74,26 @@ Some examples of attributes and behavior:
 
 > :warning: In other words, an object is an instance of a class.
 
+#### Quiz 01.01.01
+
+##### Question
+
+A class defines... 
+
+Select all correct answers (choose two).
+
+- [ ] values
+- [ ] apples
+- [ ] behaviors
+- [ ] attributes
+
+##### Answer 
+
+- [ ] values
+- [ ] apples
+- [x] behaviors
+- [x] attributes
+
 ### Lesson 01.02: Creating Classes & Objects
 
 ### Lesson 01.03: Class Attributes
