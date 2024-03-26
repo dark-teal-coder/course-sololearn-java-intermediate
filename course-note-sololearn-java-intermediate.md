@@ -76,7 +76,7 @@ Some examples of attributes and behavior:
 
 #### Quiz 01.01.01
 
-##### Question
+**Question**
 
 A class defines... 
 
@@ -87,7 +87,7 @@ Select all correct answers (choose two).
 - [ ] behaviors
 - [ ] attributes
 
-##### Answer 
+**Answer**
 
 - [ ] values
 - [ ] apples
