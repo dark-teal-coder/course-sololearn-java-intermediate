@@ -94,6 +94,32 @@ Select all correct answers (choose two).
 - [x] behaviors
 - [x] attributes
 
+#### Creating Classes
+
+In order to create your own custom objects, you must first create the corresponding classes. This is accomplished by right clicking on the src folder in Eclipse and selecting Create->New->Class. Give your class a name and click Finish to add the new class to your project:
+
+<p align="center">
+    <img src="./images/java-intermediate-01-02-p01-a.png" alt="./images/java-intermediate-01-02-p01-a.png" width="50%" height="50%">
+</p>
+
+As you can see, Eclipse has already added the initial code for the class.
+
+Now let's create a simple method in our new class.
+
+Animal.java
+
+```java
+public class Animal {
+	void bark() {
+		System.out.println("Woof-Woof");
+	}
+}
+```
+
+We declared a bark() method in our Animal class.
+
+> :warning: Now, in order to use the class and it's methods, we need to declare an object of that class.
+
 ### Lesson 01.02: Creating Classes & Objects
 
 ### Lesson 01.03: Class Attributes
