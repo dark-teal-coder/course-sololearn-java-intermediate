@@ -120,6 +120,32 @@ We declared a bark() method in our Animal class.
 
 > :warning: Now, in order to use the class and it's methods, we need to declare an object of that class.
 
+#### Quiz 01.02.01
+
+**Question**
+
+Fill in the blanks to create a class with a single method called "test".
+
+```java
+public _____ A {
+	public void _____() {
+		System.out.println("Hi");
+	}
+}
+```
+
+**Answer**
+
+`class` and `test`
+
+```java
+public class A {
+	public void test() {
+		System.out.println("Hi");
+	}
+}
+```
+
 ### Lesson 01.02: Creating Classes & Objects
 
 ### Lesson 01.03: Class Attributes
