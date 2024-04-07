@@ -343,16 +343,20 @@ The program you are given takes a guest's data (first name, last name, age, and 
 Complete the class by adding corresponding attributes so that the saveCustomerInfo() method works correctly. Also assign taken data values to attributes of created object.
 
 Sample Input:
+```
 John
 Smith
 35
 204
+```
 
 Sample Output:
+```
 First name: John
 Second name: Smith
 Age: 35
 Room number: 204
+```
 
 > :warning: Be attentive to set correct data types for attributes.
 
@@ -389,7 +393,7 @@ class Customer {
     // Define method
     public void saveCustomerInfo() {
         System.out.println("First name: " + firstName);
-        System.out.println("Second name: " + lastName);
+        System.out.println("Last name: " + lastName);
         System.out.println("Age: " + age);
         System.out.println("Room number: " + roomNumber);
     }
