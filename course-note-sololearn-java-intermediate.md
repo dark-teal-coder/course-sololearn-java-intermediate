@@ -304,6 +304,98 @@ class Person {
 }
 ```
 
+#### Creating Objects
+
+Next, we can create multiple objects of our Vehicle class, and use the dot syntax to access their attributes and methods.
+
+```java
+public class Vehicle {
+	int maxSpeed;
+	int wheels;
+	String color;
+	double fuelCapacity;  
+	
+	void horn() {
+		System.out.println("Beep!");
+	}
+}
+
+class MyClass {
+	public static void main(String[ ] args) {
+		Vehicle v1 = new Vehicle();
+		Vehicle v2 = new Vehicle();
+		v1.color = "red";
+		v2.horn();
+	}
+}
+```
+
+> :warning: Run the code and see how it works!
+
+##### Class Attributes
+
+###### Class Attributes
+
+You are the administrator of a hotel and must create customer information cards for your new customers. On the card, you must note the customer’s first and last name, age, and room number. 
+
+The program you are given takes a guest's data (first name, last name, age, and room number) as input.
+
+Complete the class by adding corresponding attributes so that the saveCustomerInfo() method works correctly. Also assign taken data values to attributes of created object.
+
+Sample Input:
+John
+Smith
+35
+204
+
+Sample Output:
+First name: John
+Second name: Smith
+Age: 35
+Room number: 204
+
+> :warning: Be attentive to set correct data types for attributes.
+
+###### Solution
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Take inputs
+        Scanner read = new Scanner(System.in);
+        String firstName = read.nextLine();
+        String lastName = read.nextLine();
+        int age = read.nextInt();
+        int roomNumber = read.nextInt();
+        Customer customer = new Customer();
+        // Assign data to attributes
+        customer.firstName = firstName; 
+        customer.lastName = lastName; 
+        customer.age = age; 
+        customer.roomNumber = roomNumber;
+        // Call method
+        customer.saveCustomerInfo();
+    }
+}
+
+class Customer {
+    // Set attributes
+    String firstName;
+    String lastName;
+    int age;
+    int roomNumber;
+    // Define method
+    public void saveCustomerInfo() {
+        System.out.println("First name: " + firstName);
+        System.out.println("Second name: " + lastName);
+        System.out.println("Age: " + age);
+        System.out.println("Room number: " + roomNumber);
+    }
+}
+```
+
 ### Lesson 01.04: Access Modifiers
 
 ### Lesson 01.05: Getters and Setters
