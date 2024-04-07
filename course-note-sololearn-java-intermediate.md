@@ -244,6 +244,29 @@ class B {
 
 ### Lesson 01.03: Class Attributes
 
+#### Defining Attributes
+
+A class has attributes and methods. The attributes are basically variables within a class.
+
+Let's create a class called `Vehicle`, with its corresponding attributes and methods.
+
+```java
+public class Vehicle {
+	int maxSpeed;
+	int wheels;
+	String color;
+	double fuelCapacity;  
+	
+	void horn() {
+		System.out.println("Beep!");
+	}
+}
+```
+
+`maxSpeed`, `wheels`, `color`, and `fuelCapacity` are the attributes of our `Vehicle` class, and `horn()` is the only method.
+
+> :warning: You can define as many attributes and methods as necessary.
+
 ### Lesson 01.04: Access Modifiers
 
 ### Lesson 01.05: Getters and Setters
