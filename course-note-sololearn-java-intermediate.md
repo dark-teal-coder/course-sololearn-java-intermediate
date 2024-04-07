@@ -400,6 +400,26 @@ class Customer {
 }
 ```
 
+#### Quiz 01.03.02
+
+**Question**
+
+Fill in the blanks to create two objects from the class "People".
+
+```java
+People obj1 = _____ People();
+People obj2 = new People _____;
+```
+
+**Answer**
+
+`new` and `()`
+
+```java
+People obj1 = new People();
+People obj2 = new People ();
+```
+
 ### Lesson 01.04: Access Modifiers
 
 ### Lesson 01.05: Getters and Setters
