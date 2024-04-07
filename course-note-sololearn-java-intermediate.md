@@ -204,6 +204,44 @@ class Loading {
 }
 ```
 
+#### Quiz 01.02.02
+
+**Question**
+
+Fill in the blanks to create an object of the A class in the B class and call its "test" method.
+
+```java
+public _____ A {
+	public void test() {
+		System.out.println("Hi");
+	}
+}
+class B {
+	public static void main(String args[ ]) {
+		_____ obj = _____ A();
+		obj._____;
+	}
+}
+```
+
+**Answer**
+
+`class`, `A`, `new` and `test()`
+
+```java
+public class A {
+	public void test() {
+		System.out.println("Hi");
+	}
+}
+class B {
+	public static void main(String args[ ]) {
+		A obj = new A();
+		obj.test();
+	}
+}
+```
+
 ### Lesson 01.03: Class Attributes
 
 ### Lesson 01.04: Access Modifiers
