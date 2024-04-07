@@ -267,6 +267,43 @@ public class Vehicle {
 
 > :warning: You can define as many attributes and methods as necessary.
 
+#### Quiz 01.03.01
+
+**Question**
+
+Drag and drop from the options below to define a class with these attributes: `age` of type integer, `height` as a double, and `name` as a string.
+
+```java
+_____ Person {
+	_____ age;
+	_____ height;
+	_____ name;
+}
+```
+
+- `String`
+- `class`
+- `void`
+- `define`
+- `attribute`
+- `int`
+- `double`
+
+**Answer**
+
+1. `class`
+2. `int`
+3. `double`
+4. `String`
+
+```java
+class Person {
+	int age;
+	double height;
+	String name;
+}
+```
+
 ### Lesson 01.04: Access Modifiers
 
 ### Lesson 01.05: Getters and Setters
