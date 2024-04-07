@@ -181,7 +181,7 @@ The dot notation is used to access the object's attributes and methods.
 
 Create a program to show loading message to your application users.
 
-Define a class Loading which has one public method called LoadingMessage(), which should print "Loading" when called.
+Define a class Loading which has one public method called `loadingMessage()`, which should print "Loading" when called.
 
 Create an object named loading and call that method.
 
@@ -198,7 +198,7 @@ public class Main {
 }
 
 class Loading {
-	public static void LoadingMessage(){
+	public static void loadingMessage(){
 		System.out.println("Loading");
 	}
 }
