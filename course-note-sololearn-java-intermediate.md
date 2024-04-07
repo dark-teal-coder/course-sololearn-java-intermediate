@@ -366,37 +366,37 @@ Room number: 204
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        // Take inputs
-        Scanner read = new Scanner(System.in);
-        String firstName = read.nextLine();
-        String lastName = read.nextLine();
-        int age = read.nextInt();
-        int roomNumber = read.nextInt();
-        Customer customer = new Customer();
-        // Assign data to attributes
-        customer.firstName = firstName; 
-        customer.lastName = lastName; 
-        customer.age = age; 
-        customer.roomNumber = roomNumber;
-        // Call method
-        customer.saveCustomerInfo();
-    }
+	public static void main(String[] args) {
+		// Take inputs
+		Scanner read = new Scanner(System.in);
+		String firstName = read.nextLine();
+		String lastName = read.nextLine();
+		int age = read.nextInt();
+		int roomNumber = read.nextInt();
+		// Assign data to attributes
+		Customer customer = new Customer();
+		customer.firstName = firstName; 
+		customer.lastName = lastName; 
+		customer.age = age; 
+		customer.roomNumber = roomNumber;
+		// Call method
+		customer.saveCustomerInfo();
+	}
 }
 
 class Customer {
-    // Set attributes
-    String firstName;
-    String lastName;
-    int age;
-    int roomNumber;
-    // Define method
-    public void saveCustomerInfo() {
-        System.out.println("First name: " + firstName);
-        System.out.println("Last name: " + lastName);
-        System.out.println("Age: " + age);
-        System.out.println("Room number: " + roomNumber);
-    }
+	// Set attributes
+	String firstName;
+	String lastName;
+	int age;
+	int roomNumber;
+	// Define method
+	public void saveCustomerInfo() {
+		System.out.println("First name: " + firstName);
+		System.out.println("Last name: " + lastName);
+		System.out.println("Age: " + age);
+		System.out.println("Room number: " + roomNumber);
+	}
 }
 ```
 
