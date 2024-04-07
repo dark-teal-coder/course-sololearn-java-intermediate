@@ -148,6 +148,62 @@ public class A {
 }
 ```
 
+#### Creating Objects
+
+Let's head over to our main and create a new object of our class.
+
+`MyClass.java`
+
+```java
+public class Animal {
+	void bark() {
+		System.out.println("Woof-Woof");
+	}
+}
+
+class MyClass {
+	public static void main(String[ ] args) {
+		Animal dog = new Animal();
+		dog.bark();
+	}
+}
+```
+
+Now, `dog` is an object of type `Animal`. Thus, we can call its `bark()` method, using the name of the object and a dot.
+
+The dot notation is used to access the object's attributes and methods.
+
+> :warning: You have just created your first object!
+
+##### Creating Classes & Objects
+
+###### Creating Classes & Objects
+
+Create a program to show loading message to your application users.
+
+Define a class Loading which has one public method called LoadingMessage(), which should print "Loading" when called.
+
+Create an object named loading and call that method.
+
+> :warning: Don't forget to use new keyword while creating an object.
+
+###### Solution
+
+```java
+public class Main {
+	public static void main(String[] args) {
+		Loading loading = new Loading();         
+		loading.LoadingMessage();
+	}
+}
+
+class Loading {
+	public static void LoadingMessage(){
+		System.out.println("Loading");
+	}
+}
+```
+
 ### Lesson 01.03: Class Attributes
 
 ### Lesson 01.04: Access Modifiers
