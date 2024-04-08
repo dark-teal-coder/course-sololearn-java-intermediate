@@ -422,6 +422,70 @@ People obj2 = new People ();
 
 ### Lesson 01.04: Access Modifiers
 
+#### Access Modifiers
+
+Now let's discuss the public keyword in front of the main method.
+
+```java
+public static void main(String[ ] args)
+```
+
+public is an access modifier, meaning that it is used to set the level of access. You can use access modifiers for classes, attributes, and methods.
+
+For classes, the available modifiers are public or default (left blank), as described below:
+- public: The class is accessible by any other class.
+- default: The class is accessible only by classes in the same package.
+
+The following choices are available for attributes and methods:
+- default: A variable or method declared with no access control modifier is available to any other class in the same package.
+- public: Accessible from any other class.
+- protected: Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass (Subclasses and superclasses are covered in upcoming lessons).
+- private: Accessible only within the declared class itself.
+
+Example:
+
+```java
+public class Vehicle {
+	private int maxSpeed;
+	private int wheels;
+	private String color;
+	private double fuelCapacity;
+	
+	public void horn() {
+		System.out.println("Beep!");
+	}
+}
+```
+
+> :warning: It's a best practice to keep the variables within a class private. The variables are accessible and modified using Getters and Setters.
+
+##### Access Modifiers
+
+###### Access Modifiers
+
+You're a tour manager and you need to have a list of countries along with its capitals. You're given a program which creates Country object and you should output the name and the capital, but something goes wrong. Change the access modifiers of the Country class fields in order to perform the required output.
+
+> :warning: Use public access modifier to provide access to any other classes.
+
+###### Solution
+
+```java
+public class Program{
+	public static void main(String[] args) {
+		Country c = new Country();
+		c.name = "France";
+		c.capital = "Paris";
+		System.out.println("Country:  " + c.name);
+		System.out.println("Capital:  " + c.capital);
+	}	
+}
+class Country{
+	// Change "private" to "public"
+	public String name;
+	protected String capital;
+}
+```
+
 ### Lesson 01.05: Getters and Setters
 
 ### Lesson 01.06: Constructors
