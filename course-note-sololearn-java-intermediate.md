@@ -98,7 +98,7 @@ Select all correct answers (choose 2).
 
 #### Creating Classes
 
-In order to create your own custom objects, you must first create the corresponding classes. This is accomplished by right clicking on the src folder in Eclipse and selecting Create -> New -> Class. Give your class a name and click Finish to add the new class to your project:
+In order to create your own custom objects, you must first create the corresponding classes. This is accomplished by right clicking on the `src` folder in Eclipse and selecting [Create] -> [New] -> [Class]. Give your class a name and click Finish to add the new class to your project:
 
 <p align="center">
     <img src="./images/java-intermediate-01-02-p01-a.png" alt="./images/java-intermediate-01-02-p01-a.png" width="50%" height="50%">
