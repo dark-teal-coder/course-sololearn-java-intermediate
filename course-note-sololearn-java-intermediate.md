@@ -78,9 +78,9 @@ Some examples of attributes and behavior:
 
 **Question**
 
-A class defines... 
+A class defines _____ and _____.
 
-Select all correct answers (choose two).
+Select all correct answers (choose 2).
 
 - [ ] values
 - [ ] apples
