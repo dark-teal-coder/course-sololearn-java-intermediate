@@ -486,6 +486,26 @@ class Country{
 }
 ```
 
+#### Quiz 01.04.01
+
+**Question**
+
+Which of the following are valid access modifiers? 
+
+Select all correct answers.
+
+- [ ] `public`
+- [ ] `protected`
+- [ ] `private`
+- [ ] `hidden`
+
+**Answer**
+
+- [x] `public`
+- [x] `protected`
+- [x] `private`
+- [ ] `hidden`
+
 ### Lesson 01.05: Getters and Setters
 
 ### Lesson 01.06: Constructors
