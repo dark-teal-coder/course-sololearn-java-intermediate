@@ -539,7 +539,39 @@ The setter method takes a parameter and assigns it to the attribute.
 
 > :warning: The keyword this is used to refer to the current object. Basically, this.color is the color attribute of the current object.
 
+#### Quiz 01.05.01
 
+**Question**
+
+Drag and drop from the options below to define the set and get methods.
+
+```java
+class A {
+	private int x;
+	public _____ getX() {
+		return _____;
+	}
+	public _____ setX(int x) {
+		this.x = x;
+	}
+}
+```
+
+**Answer**
+
+`int`, `x` and `void`
+
+```java
+class A {
+	private int x;
+	public int getX() {
+		return x;
+	}
+	public void setX(int x) {
+		this.x = x;
+	}
+}
+```
 
 ### Lesson 01.06: Constructors
 
