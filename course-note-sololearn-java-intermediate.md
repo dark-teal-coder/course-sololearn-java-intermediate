@@ -605,7 +605,73 @@ Getters and setters allow us to have control over the values. You may, for examp
 
 > :warning: Getters and setters are fundamental building blocks for encapsulation, which will be covered in the next module.
 
+##### Getters and Setters
 
+###### Getters and Setters
+
+The program you are given receives name and age of student as input.
+
+Complete the program to set the values for the corresponding attributes of the Student class and prints out the final result. If the age is <0, program should output "Invalid age" and assign a 0 value to the age attribute.
+
+Sample input:
+```
+Olivia
+-2
+```
+
+Sample output:
+```
+Invalid age
+Name: Olivia
+Age: 0
+```
+
+Explanation
+-2 is invalid value for age attribute, that's why "Invalid age" and "Age: 0" is printed. Setter and Getter should handle this.
+
+> :warning: You need to handle the conditions inside the Getter and the Setter.
+
+###### Solution
+
+```java
+import java.util.Scanner;
+
+class Main {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String name = input.nextLine();
+		int age = input.nextInt();
+		Student student = new Student();
+		
+		student.name = name;
+		// Set age via Setter
+		if (age < 0){
+			System.out.println("Invalid age"); 
+			student.setAge(0);    
+		}
+		else {
+			student.setAge(age);
+		}
+		
+		System.out.println("Name: " + student.name);
+		System.out.println("Age: " + student.getAge());
+	}
+}
+
+class Student {
+	public String name;
+	private int age;
+	
+	public int getAge() {
+		// Complete Getter
+		return age; 
+	}
+	public void setAge(int age) {
+		// Complete Setter
+		this.age = age; 
+	}
+}
+```
 
 ### Lesson 01.06: Constructors
 
