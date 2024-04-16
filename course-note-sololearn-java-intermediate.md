@@ -693,6 +693,43 @@ What would the name of the setter method for the class variable named "age" be?
 
 ### Lesson 01.06: Constructors
 
+#### Constructors
+
+Constructors are special methods invoked when an object is created and are used to initialize them. 
+
+A constructor can be used to provide initial values for object attributes.
+
+- A constructor name must be same as its class name.
+- A constructor must have no explicit return type.
+
+Example of a constructor:
+
+```java
+public class Vehicle {
+	private String color;
+		Vehicle() {
+		color = "Red";
+	}
+}
+```
+
+The Vehicle() method is the constructor of our class, so whenever an object of that class is created, the color attribute will be set to "Red".
+
+A constructor can also take parameters to initialize attributes.
+
+```java
+public class Vehicle {
+	private String color;
+		Vehicle(String c) {
+		color = c;
+	}
+}
+```
+
+> :warning: You can think of constructors as methods that will set up your class by default, so you don’t need to repeat the same code every time.
+
+
+
 ### Lesson 01.07: Value & Reference Types
 
 ### Lesson 01.08: The Math Class
