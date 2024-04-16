@@ -673,6 +673,24 @@ class Student {
 }
 ```
 
+#### Quiz 01.05.02
+
+**Question**
+
+What would the name of the setter method for the class variable named "age" be?
+
+- [ ] `intAge`
+- [ ] `setAge`
+- [ ] `Age`
+- [ ] `getAge`
+
+**Answer**
+
+- [ ] `intAge`
+- [x] `setAge`
+- [ ] `Age`
+- [ ] `getAge`
+
 ### Lesson 01.06: Constructors
 
 ### Lesson 01.07: Value & Reference Types
