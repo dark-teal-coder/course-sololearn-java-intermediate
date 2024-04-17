@@ -728,6 +728,37 @@ public class Vehicle {
 
 > :warning: You can think of constructors as methods that will set up your class by default, so you don’t need to repeat the same code every time.
 
+#### Quiz 01.06.01
+
+**Question**
+
+Drag and drop from the options below to create a valid constructor.
+
+```java
+class Person {
+	private int age;
+	public _____ (_____ myage) {
+		age = myage;
+	}
+}
+```
+
+- [ ] `constructor`
+- [ ] `private`
+- [ ] `Person`
+- [ ] `int`
+
+**Answer**
+
+```java
+class Person {
+	private int age;
+	public Person (int myage) {
+		age = myage;
+	}
+}
+```
+
 
 
 ### Lesson 01.07: Value & Reference Types
