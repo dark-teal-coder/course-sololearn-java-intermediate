@@ -759,6 +759,22 @@ class Person {
 }
 ```
 
+#### Using Constructors
+
+The constructor is called when you create an object using the new keyword.
+
+Example:
+
+```java
+public class MyClass {
+	public static void main(String[ ] args) {
+		Vehicle v = new Vehicle("Blue");
+	}
+}
+```
+
+> :warning: This will call the constructor, which will set the color attribute to "Blue".
+
 
 
 ### Lesson 01.07: Value & Reference Types
