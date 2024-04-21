@@ -775,6 +775,20 @@ public class MyClass {
 
 > :warning: This will call the constructor, which will set the color attribute to "Blue".
 
+#### Quiz 01.06.02
+
+**Question**
+
+True or false: The constructor must have the same name as the class.
+
+- [ ] False
+- [ ] True
+
+**Answer**
+
+- [ ] False
+- [x] True
+
 
 
 ### Lesson 01.07: Value & Reference Types
