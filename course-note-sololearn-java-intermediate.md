@@ -789,7 +789,136 @@ True or false: The constructor must have the same name as the class.
 - [ ] False
 - [x] True
 
+#### Constructors
 
+A single class can have multiple constructors with different numbers of parameters.
+
+The setter methods inside the constructors can be used to set the attribute values.
+
+Example:
+
+```java
+public class Vehicle {
+	private String color;
+	
+	Vehicle() {
+		this.setColor("Red");
+	}
+	Vehicle(String c) {
+		this.setColor(c);
+	}
+	
+	// Setter
+	public void setColor(String c) {
+		this.color = c;
+	}
+}
+```
+
+The class above has two constructors, one without any parameters setting the color attribute to a default value of "Red", and another constructor that accepts a parameter and assigns it to the attribute.
+
+Now, we can use the constructors to create objects of our class.
+
+```java
+public class Vehicle {
+	private String color;
+	
+	Vehicle() {
+		this.setColor("Red");
+	}
+	Vehicle(String c) {
+		this.setColor(c);
+	}
+	
+	// Setter
+	public void setColor(String c) {
+		this.color = c;
+	}
+	
+	// Getter
+	public String getColor() {
+		return color;
+	}
+}
+
+public class Program {
+	public static void main(String[] args) {        
+		//color will be "Red"
+		Vehicle v1 = new Vehicle();
+		
+		//color will be "Green"
+		Vehicle v2 = new Vehicle("Green"); 
+		
+		System.out.println(v2.getColor());
+	}
+}
+```
+
+> :warning: Java automatically provides a default constructor, so all classes have a constructor, whether one is specifically defined or not.
+
+##### Constructors
+
+###### Constructors
+
+Your friend is a cashier at a movie theater. He knows that you are an awesome java developer so he asked you to help him out and create a program that gets movie title, row, and seat information and prints out a new ticket.
+
+Complete the existing code by adding a constructor to Ticket class so that it can be correctly initialized.
+
+Sample Input
+Jaws
+5
+1
+
+Sample Output
+Movie: Jaws
+Row: 5
+Seat: 1
+
+> :warning: You can figure out the constructor parameters by looking at the types of data that is being inputted.
+
+###### Solution
+
+```java
+import java.util.Scanner;
+
+class Main {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String movie = input.nextLine();
+		int row = input.nextInt();
+		int seat = input.nextInt();
+		Ticket ticket = new Ticket(movie, row, seat);
+		System.out.println("Movie: " + ticket.getMovie());
+		System.out.println("Row: " + ticket.getRow());
+		System.out.println("Seat: " + ticket.getSeat());
+	}
+}
+
+class Ticket {
+	private String movie;
+	private int row;
+	private int seat;
+	
+	//complete the constructor
+	public Ticket(String movie, int row, int seat) {
+		this.movie = movie; 
+		this.row = row; 
+		this.seat = seat;
+	}
+	
+	public String getMovie() {
+		return movie;
+	}
+	
+	public int getRow() {
+		return row;
+	}
+	
+	public int getSeat() {
+		return seat;
+	}
+}
+```
 
 ### Lesson 01.07: Value & Reference Types
 
