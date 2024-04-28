@@ -920,6 +920,34 @@ class Ticket {
 }
 ```
 
+#### Quiz 01.06.03
+
+**Question**
+
+Fill in the blanks.
+
+```java
+_____ A
+{
+	private int x;
+	public A(_____ val) {
+		x = val;
+	}
+}
+```
+
+**Answer**
+
+```java
+class A
+{
+	private int x;
+	public A(int val) {
+		x = val;
+	}
+}
+```
+
 ### Lesson 01.07: Value & Reference Types
 
 ### Lesson 01.08: The Math Class
