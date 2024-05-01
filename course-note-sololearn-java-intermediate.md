@@ -976,7 +976,26 @@ public class MyClass {
 
 > :warning: The method from the example above takes the value of its parameter, which is why the original variable is not affected and 5 remains as its value.
 
+#### Quiz 01.07.01
 
+**Question**
+
+What is the output of this code?
+
+```java
+public static void main(String[ ] args) {
+	int x = 4;
+	square(x);
+	System.out.println(x); 
+}
+static void square(int x) {
+	x = x*x;
+}
+```
+
+**Answer**
+
+`4`
 
 ### Lesson 01.08: The Math Class
 
