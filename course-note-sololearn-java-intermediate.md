@@ -1043,7 +1043,27 @@ Because `j` is a reference type, the method affects the object itself, and is ab
 
 > :warning: Arrays and Strings are also reference data types.
 
+#### Quiz 01.07.02
 
+**Question**
+
+What is the output of this code?
+
+```java
+public static void main(String[ ] args) {
+	Person p = new Person();
+	p.setAge(25);
+	change(p);
+	System.out.println(p.getAge());
+}
+static void change(Person p) {
+	p.setAge(10);
+}
+```
+
+**Answer**
+
+`10`
 
 ### Lesson 01.08: The Math Class
 
