@@ -1067,6 +1067,100 @@ static void change(Person p) {
 
 ### Lesson 01.08: The Math Class
 
+#### The Math Class
+
+The JDK defines a number of useful classes, one of them being the Math class, which provides predefined methods for mathematical operations.
+
+You do not need to create an object of the Math class to use it. To access it, just type in Math. and the corresponding method.
+
+Math.abs() returns the absolute value of its parameter.
+
+```java
+public class Program {
+	public static void main(String[] args) {
+		int a = Math.abs(10); 
+		System.out.println(a);
+		
+		int b = Math.abs(-20);
+		System.out.println(b);
+	}
+}
+```
+
+Math.ceil() rounds a floating point value up to the nearest integer value. The rounded value is returned as a double.
+
+```java
+public class Program {
+	public static void main(String[] args) {
+		int a = Math.abs(10); 
+		System.out.println(a);
+		
+		int b = Math.abs(-20);
+		System.out.println(b);
+	}
+}
+```
+
+Similarly, Math.floor() rounds a floating point value down to the nearest integer value.
+
+```java
+public class Program {
+	public static void main(String[] args) {
+		int a = Math.abs(10); 
+		System.out.println(a);
+		
+		int b = Math.abs(-20);
+		System.out.println(b);
+	}
+}
+```
+
+Math.max() returns the largest of its parameters.
+
+```java
+public class Program {
+	public static void main(String[] args) {
+		int a = Math.abs(10); 
+		System.out.println(a);
+		
+		int b = Math.abs(-20);
+		System.out.println(b);
+	}
+}
+```
+
+Conversely, Math.min() returns the smallest parameter.
+
+```java
+public class Program {
+	public static void main(String[] args) {
+		int a = Math.abs(10); 
+		System.out.println(a);
+		
+		int b = Math.abs(-20);
+		System.out.println(b);
+	}
+}
+```
+
+Math.pow() takes two parameters and returns the first parameter raised to the power of the second parameter.
+
+```java
+public class Program {
+	public static void main(String[] args) {
+		int a = Math.abs(10); 
+		System.out.println(a);
+		
+		int b = Math.abs(-20);
+		System.out.println(b);
+	}
+}
+```
+
+> :warning: There are a number of other methods available in the Math class, including: <br> sqrt() for square root, sin() for sine, cos() for cosine, and others.
+
+
+
 ### Lesson 01.09: Static
 
 ### Lesson 01.10: Final
