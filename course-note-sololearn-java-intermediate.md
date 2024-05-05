@@ -1144,7 +1144,36 @@ public class Program {
 
 > :warning: There are a number of other methods available in the Math class, including: <br> sqrt() for square root, sin() for sine, cos() for cosine, and others.
 
+##### The Math Class
 
+###### The Math Class
+
+Write a program to take numbers as input and return the first number raised to the power of the second number.
+
+Sample Input: 
+2
+4
+
+Sample Output: 
+16.0
+
+> :warning: Use Math.pow() method.
+
+###### Solution
+
+```java
+import java.util.Scanner;
+
+class Main {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int num1 = input.nextInt();
+		int num2 = input.nextInt();
+		double result = Math.pow(num1, num2); 
+		System.out.println(result);
+	}
+}
+```
 
 ### Lesson 01.09: Static
 
