@@ -865,14 +865,18 @@ Your friend is a cashier at a movie theater. He knows that you are an awesome ja
 Complete the existing code by adding a constructor to Ticket class so that it can be correctly initialized.
 
 Sample Input
+```
 Jaws
 5
 1
+```
 
 Sample Output
+```
 Movie: Jaws
 Row: 5
 Seat: 1
+```
 
 > :warning: You can figure out the constructor parameters by looking at the types of data that is being inputted.
 
@@ -1151,11 +1155,15 @@ public class Program {
 Write a program to take numbers as input and return the first number raised to the power of the second number.
 
 Sample Input: 
+```
 2
 4
+```
 
 Sample Output: 
+```
 16.0
+```
 
 > :warning: Use Math.pow() method.
 
