@@ -1183,6 +1183,22 @@ class Main {
 }
 ```
 
+#### Quiz 01.08.01
+
+**Question**
+
+What is the value of the following expression?
+
+```java
+Math.abs(Math.min(-6, 3));
+```
+
+**Answer** 
+
+- [ ] `-6`
+- [ ] `6`
+- [ ] `3`
+
 ### Lesson 01.09: Static
 
 ### Lesson 01.10: Final
