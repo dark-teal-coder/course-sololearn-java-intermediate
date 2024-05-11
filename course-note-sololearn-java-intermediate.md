@@ -1073,7 +1073,7 @@ The JDK defines a number of useful classes, one of them being the Math class, wh
 
 You do not need to create an object of the Math class to use it. To access it, just type in Math. and the corresponding method.
 
-Math.abs() returns the absolute value of its parameter.
+`Math.abs()` returns the absolute value of its parameter.
 
 ```java
 public class Program {
@@ -1087,7 +1087,7 @@ public class Program {
 }
 ```
 
-Math.ceil() rounds a floating point value up to the nearest integer value. The rounded value is returned as a double.
+`Math.ceil()` rounds a floating point value up to the nearest integer value. The rounded value is returned as a double.
 
 ```java
 public class Program {
@@ -1098,7 +1098,7 @@ public class Program {
 }
 ```
 
-Similarly, Math.floor() rounds a floating point value down to the nearest integer value.
+Similarly, `Math.floor()` rounds a floating point value down to the nearest integer value.
 
 ```java
 public class Program {
@@ -1109,7 +1109,7 @@ public class Program {
 }
 ```
 
-Math.max() returns the largest of its parameters.
+`Math.max()` returns the largest of its parameters.
 
 ```java
 public class Program {
@@ -1120,7 +1120,7 @@ public class Program {
 }
 ```
 
-Conversely, Math.min() returns the smallest parameter.
+Conversely, `Math.min()` returns the smallest parameter.
 
 ```java
 public class Program {
@@ -1131,7 +1131,7 @@ public class Program {
 }
 ```
 
-Math.pow() takes two parameters and returns the first parameter raised to the power of the second parameter.
+`Math.pow()` takes two parameters and returns the first parameter raised to the power of the second parameter.
 
 ```java
 public class Program {
