@@ -1242,6 +1242,24 @@ You can also access the static variable using any object of that class, such as 
 
 > :warning: It’s a common practice to use upper case when naming a static variable, although not mandatory.
 
+#### Quiz 01.09.01
+
+**Question**
+
+Fill in the blank to declare a static variable.
+
+```java
+public _____ int x = 0;
+```
+
+**Answer**
+
+`static`
+
+```java
+public static int x = 0;
+```
+
 ### Lesson 01.10: Final
 
 ### Lesson 01.11: Packages
