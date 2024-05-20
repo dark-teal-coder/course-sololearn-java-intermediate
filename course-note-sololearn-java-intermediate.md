@@ -1291,7 +1291,26 @@ Another example of static methods are those of the Math class, which is why you 
 
 > :warning: Also, the main method must always be static.
 
+#### Quiz 01.09.02
 
+**Question**
+
+What output results from this code?
+
+```java
+class Person {
+	public static int pCount; 
+	public static void main(String[ ] args) { 
+		Person.pCount = 1; 
+		Person.pCount++;
+		System.out.println(Person.pCount); 
+	}
+}
+```
+
+**Answers**
+
+`2`
 
 ### Lesson 01.10: Final
 
