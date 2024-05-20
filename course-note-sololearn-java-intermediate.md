@@ -1260,6 +1260,39 @@ public _____ int x = 0;
 public static int x = 0;
 ```
 
+#### Static
+
+The same concept applies to static methods.
+
+```java
+public class Vehicle {
+	public static void horn() {
+		System.out.println("Beep");
+	}
+}
+```
+
+Now, the horn method can be called without creating an object:
+
+```java
+public class Vehicle {
+	public static void horn() {
+		System.out.println("Beep");
+	}
+}
+public class MyClass {
+	public static void main(String[ ] args) {
+		Vehicle.horn();
+	}
+}
+```
+
+Another example of static methods are those of the Math class, which is why you can call them without creating a Math object.
+
+> :warning: Also, the main method must always be static.
+
+
+
 ### Lesson 01.10: Final
 
 ### Lesson 01.11: Packages
