@@ -27,17 +27,17 @@ Time to get serious and really see what Java (and you!) can do! In this course y
 ## Table of Contents
 
 - [Module 01: Classes and Objects](https://github.com/dark-teal-coder/course-sololearn-java-intermediate/blob/main/course-note-sololearn-java-intermediate.md#module-01-classes-and-objects)
-  - [Lesson 01.01: ]
-  - [Lesson 01.02: ]
-  - [Lesson 01.03: ]
-  - [Lesson 01.04: ]
-  - [Lesson 01.05: ]
-  - [Lesson 01.06: ]
-  - [Lesson 01.07: ]
-  - [Lesson 01.08: ]
-  - [Lesson 01.09: ]
-  - [Lesson 01.10: ]
-  - [Lesson 01.11: ]
+  - [Lesson 01.01: Object-Oriented Programming]
+  - [Lesson 01.02: Creating Classes & Objects]
+  - [Lesson 01.03: Class Attributes]
+  - [Lesson 01.04: Access Modifiers]
+  - [Lesson 01.05: Getters and Setters]
+  - [Lesson 01.06: Constructors]
+  - [Lesson 01.07: Value & Reference Types]
+  - [Lesson 01.08: The Math Class]
+  - [Lesson 01.09: Static]
+  - [Lesson 01.10: Final]
+  - [Lesson 01.11: Packages]
   - [Quiz 01: Java 2 Module 1 Quiz]
 - [Module 02: More on Classes](https://github.com/dark-teal-coder/course-sololearn-java-intermediate/blob/main/course-note-sololearn-java-intermediate.md#module-02-more-on-classes)
   - [Lesson 02.01: ]
