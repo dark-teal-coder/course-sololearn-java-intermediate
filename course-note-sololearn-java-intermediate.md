@@ -28,10 +28,13 @@ Time to get serious and really see what Java (and you!) can do! In this course y
 
 - [Module 01: Classes and Objects](https://github.com/dark-teal-coder/course-sololearn-java-intermediate/blob/main/course-note-sololearn-java-intermediate.md#module-01-classes-and-objects)
   - [Lesson 01.01: ]
+  - [Quiz 01: Java 2 Module 1 Quiz]
 - [Module 02: More on Classes](https://github.com/dark-teal-coder/course-sololearn-java-intermediate/blob/main/course-note-sololearn-java-intermediate.md#module-02-more-on-classes)
-  - [Lesson 02.01:	 ]
+  - [Lesson 02.01:	]
+  - [Quiz 01: Java 2 Module 2 Quiz]
 - [Module 03: Exceptions, Lists, Threads & Files](https://github.com/dark-teal-coder/course-sololearn-java-intermediate/blob/main/course-note-sololearn-java-intermediate.md#module-03-exceptions-lists-threads--files)
   - [Lesson 03.01: ]
+  - [Quiz 01: Java 2 Module 3 Quiz]
 
 &nbsp;
 
