@@ -1600,9 +1600,15 @@ class Program {
 
 **Question**
 
-Private methods are inherited from the super class.
+True or false: Private methods are inherited from the super class.
 
+- [ ] False
+- [ ] True
 
+**Answer**
+
+- [x] False
+- [ ] True
 
 ### Lesson 02.03: Polymorphism
 
