@@ -1457,6 +1457,153 @@ public class Person {
 
 ### Lesson 02.02: Inheritance
 
+#### Inheritance
+
+Inheritance is the process that enables one class to acquire the properties (methods and variables) of another. With inheritance, the information is placed in a more manageable, hierarchical order.
+
+The class inheriting the properties of another is the subclass (also called derived class, or child class); the class whose properties are inherited is the superclass (base class, or parent class).
+
+To inherit from a class, use the extends keyword.
+
+This example shows how to have the class Dog to inherit from the class Animal.
+
+Example: 
+
+```java
+class Dog extends Animal {
+	// some code
+}
+```
+
+> :warning: Here, Dog is the subclass, and Animal is the superclass.
+
+#### Quiz 02.02.01
+
+**Question**
+
+Fill in the blank to inherit the Car class from the Vehicle class.
+
+```java
+class Car _____ Vehicle{}
+```
+
+**Answers**
+
+```java
+class Car extends Vehicle{}
+```
+
+#### Inheritance
+
+When one class is inherited from another class, it inherits all of the superclass' non-private variables and methods.
+
+Example:
+
+```java
+class Animal {
+	protected int legs;
+	public void eat() {
+		System.out.println("Animal eats");
+	}
+}
+
+class Dog [b]extends [/b]Animal {
+	Dog() {
+		legs = 4;
+	}
+}
+```
+
+As you can see, the Dog class inherits the legs variable from the Animal class.
+
+We can now declare a Dog object and call the eat method of its superclass:
+
+```java
+class Animal {
+    protected int legs;
+    public void eat() {
+        System.out.println("Animal eats");
+    }
+}
+
+class Dog extends Animal {
+    Dog() {
+        legs = 4;
+    }
+}
+
+class MyClass {
+    public static void main(String[ ] args) {
+        Dog d = new Dog();
+        d.eat();
+    }
+}
+```
+
+> :warning: Recall the protected access modifier, which makes the members visible only to the subclasses.
+
+#### Quiz 02.02.02
+
+**Question**
+
+Fill in the blanks to inherit from the Animal class and call its method in main.
+
+**Answer**
+
+```java
+class Animal {
+	public void makeSound() {
+		System.out.println(''Hi'');
+	}
+}
+_____ Dog _____ Animal {
+}
+class A {
+	public static void main(String args[ ]) {
+		Dog dog = new Dog();
+		_____.makeSound();
+	}
+}
+```
+
+#### Inheritance
+
+Constructors are not member methods, and so are not inherited by subclasses.
+
+However, the constructor of the superclass is called when the subclass is instantiated.
+
+Example:
+
+```java
+class A {
+	public A() {
+		System.out.println("New A");
+	}
+}
+
+class B extends A {
+	public B() {
+		System.out.println("New B");
+	}
+}
+
+class Program {
+	public static void main(String[ ] args) {
+		B obj = new B();
+	}
+}
+```
+
+> :warning: You can access the superclass from the subclass using the super keyword. For example, super.var accesses the var member of the superclass.
+
+#### Quiz 02.02.03
+
+**Question**
+
+Private methods are inherited from the super class.
+
+
+
 ### Lesson 02.03: Polymorphism
 
 ### Lesson 02.04: Overriding & Overloading
