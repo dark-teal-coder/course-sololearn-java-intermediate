@@ -2066,6 +2066,61 @@ class Cat implements Animal {
 
 ### Lesson 02.07: Casting
 
+#### Type Casting
+
+Assigning a value of one type to a variable of another type is known as Type Casting.
+
+To cast a value to a specific type, place the type in parentheses and position it in front of the value.
+
+Example:
+
+```java
+public class Program {
+	public static void main(String[] args) {
+		double a = 42.571;
+		int b = (int) a;
+		System.out.println(b);
+	}
+}
+```
+
+The code above is casting the value 3.14 to an integer, with 3 as the resulting value.
+
+Another example:
+
+```java
+public class Program {
+	public static void main(String[] args) {
+		double a = 42.571;
+		int b = (int) a;
+		System.out.println(b);
+	}
+}
+```
+
+> :warning: Java supports automatic type casting of integers to floating points, since there is no loss of precision. On the other hand, type casting is mandatory when assigning floating point values to integer variables.
+
+#### Quiz 02.07.01
+
+**Question**
+
+What is the output of this code?
+
+```java
+public static void main(String[ ] args) { 
+	double x = 1.5;
+	double y = 2.65;
+	sum((int)x, (int)y);
+}
+static void sum(int x, int y) {
+	System.out.println(x + y);
+}
+```
+
+**Answer**
+
+`3`
+
 ### Lesson 02.08: Downcasting
 
 ### Lesson 02.09: Anonymous Classes
