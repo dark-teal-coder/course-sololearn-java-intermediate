@@ -2252,7 +2252,85 @@ Machine m = new Machine() {
 }
 ```
 
+#### Anonymous Classes
 
+The modification is applicable only to the current object, and not the class itself. So if we create another object of that class, the start method's implementation will be the one defined in the class.
+
+```java
+class Machine {
+	public void start() {
+		System.out.println("Starting...");
+	}
+}
+class Program {
+	public static void main(String[ ] args) {
+		Machine m1 = new Machine() {
+			@Override public void start() {
+				System.out.println("Wooooo");
+			}
+		};
+		Machine m2 = new Machine();
+		m2.start();
+		}
+}
+```
+
+#### Quiz 02.09.02
+
+**Question**
+
+Drag and drop from the options below to print "Hello".
+
+```java
+class A {
+	public void print() {
+		System.out.println("A");
+	}
+}
+class B {
+	public static void main(String[ ] args) {
+		_____ object = _____ A() {
+			@Override public void _____() {
+				System.out.println(_____);
+			}
+		};
+		object.print();
+	}
+}
+```
+
+- [ ] `new`
+- [ ] `print`
+- [ ] `"Hello"`
+- [ ] `String`
+- [ ] `A`
+- [ ] `B`
+- [ ] `extends`
+
+**Answer**
+
+```java
+class A {
+	public void print() {
+		System.out.println("A");
+	}
+}
+class B {
+	public static void main(String[ ] args) {
+		A object = new A() {
+			@Override public void print() {
+				System.out.println("Hello");
+			}
+		};
+		object.print();
+	}
+}
+```
+
+1. `A`
+2. `new`
+3. `print`
+4. `"Hello"`
 
 ### Lesson 02.10: Inner Classes
 
