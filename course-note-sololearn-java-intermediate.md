@@ -1949,6 +1949,53 @@ class Dog extends Animal {
 
 ### Lesson 02.06: Interfaces
 
+#### Interfaces
+
+An interface is a completely abstract class that contains only abstract methods.
+
+Some specifications for interfaces:
+
+- Defined using the interface keyword.
+- May contain only static final variables.
+- Cannot contain a constructor because interfaces cannot be instantiated.
+- Interfaces can extend other interfaces.
+- A class can implement any number of interfaces.
+
+An example of a simple interface:
+
+```java
+interface Animal {
+	public void eat();
+	public void makeSound();
+}
+```
+
+Interfaces have the following properties:
+
+- An interface is implicitly abstract. You do not need to use the abstract keyword while declaring an interface.
+- Each method in an interface is also implicitly abstract, so the abstract keyword is not needed.
+- Methods in an interface are implicitly public.
+
+> :warning: A class can inherit from just one superclass, but can implement multiple interfaces!
+
+#### Quiz 02.06.01
+
+**Question**
+
+In Java, how many superclasses can your inherited subclass have?
+
+- [ ] none
+- [ ] only one
+- [ ] only two
+- [ ] multiple
+
+**Answer**
+
+- [ ] none
+- [x] only one
+- [ ] only two
+- [ ] multiple
+
 ### Lesson 02.07: Casting
 
 ### Lesson 02.08: Downcasting
