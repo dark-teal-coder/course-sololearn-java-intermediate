@@ -1757,7 +1757,94 @@ True or False: Overridden methods should have the same return type and arguments
 - [ ] False
 - [x] True
 
+#### Method Overloading
 
+When methods have the same name, but different parameters, it is known as method overloading.
+
+This can be very useful when you need the same method functionality for different types of parameters.
+
+The following example illustrates a method that returns the maximum of its two parameters.
+
+```java
+int max(int a, int b) {
+	if(a > b) {
+		return a;
+	}
+	else {
+		return b;
+	}
+}
+```
+
+The method shown above will only work for parameters of type integer.
+
+However, we might want to use it for doubles, as well. For that, you need to overload the max method:
+
+```java
+class Program {
+	static double max(double a, double b) {
+		if(a > b) {
+			return a;
+		}
+		else {
+			return b;
+		}
+	}
+	static int max(int a, int b) {
+		if(a > b) {
+			return a;
+		}
+		else {
+			return b;
+		}
+	}
+	public static void main(String[] args) {        
+		System.out.println(max(8, 17));
+		System.out.println(max(3.14, 7.68));
+	}
+}
+```
+
+Now, our max method will also work with doubles.
+
+An overloaded method must have a different argument list; the parameters should differ in their type, number, or both.
+
+> :warning: Another name for method overloading is compile-time polymorphism.
+
+#### Quiz 02.04.02
+
+**Question**
+
+What is the output of this code?
+
+```java
+class A {
+	public void doSomething() {
+		System.out.println("A");
+	}
+	public void doSomething(String str) {
+		System.out.println(str);
+	}
+}
+class B {
+	public static void main(String[ ] args) {
+		A object = new A();
+		object.doSomething("B");
+	}
+}
+```
+
+- [ ] AB
+- [ ] Nothing
+- [ ] B
+- [ ] A
+
+**Answer**
+
+- [ ] AB
+- [ ] Nothing
+- [x] B
+- [ ] A
 
 ### Lesson 02.05: Abstract Classes
 
