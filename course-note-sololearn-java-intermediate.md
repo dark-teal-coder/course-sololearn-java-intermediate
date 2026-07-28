@@ -2190,6 +2190,68 @@ class B extends A {
 
 ### Lesson 02.09: Anonymous Classes
 
+#### Anonymous Classes
+
+Anonymous classes are a way to extend the existing classes on the fly.
+
+For example, consider having a class Machine:
+
+```java
+class Machine {
+	public void start() {
+		System.out.println("Starting...");
+	}
+}
+```
+
+When creating the Machine object, we can change the start method on the fly.
+
+```java
+class Machine {
+	public void start() {
+		System.out.println("Starting...");
+	}
+}
+class Program {
+	public static void main(String[ ] args) {
+		Machine m = new Machine() {
+			@Override public void start() {
+				System.out.println("Wooooo");
+			}
+		};
+		m.start();
+	}
+}
+```
+
+After the constructor call, we have opened the curly braces and have overridden the start method's implementation on the fly.
+
+> :warning: The @Override annotation is used to make your code easier to understand, because it makes it more obvious when methods are overridden.
+
+#### Quiz 02.09.01
+
+**Question**
+
+Fill in the blanks to override the start method of the Machine class.
+
+```java
+Machine m = _____ Machine() {
+_____Override public void _____() {
+		System.out.println("Hi");
+	}
+}
+```
+
+**Answer**
+
+```java
+Machine m = new Machine() {
+@Override public void start() {
+		System.out.println("Hi");
+	}
+}
+```
+
 
 
 ### Lesson 02.10: Inner Classes
