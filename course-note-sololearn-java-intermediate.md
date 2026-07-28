@@ -2334,7 +2334,56 @@ class B {
 
 ### Lesson 02.10: Inner Classes
 
+#### Inner Classes
 
+Java supports nesting classes; a class can be a member of another class.
+
+Creating an inner class is quite simple. Just write a class within a class. Unlike a class, an inner class can be private. Once you declare an inner class private, it cannot be accessed from an object outside the class.
+
+Example:
+
+```java
+class Robot {
+	int id;
+	Robot(int i) {
+		id = i;
+		Brain b = new Brain();
+		b.think();
+	}
+	private class Brain {
+		public void think() {
+			System.out.println(id + " is thinking");
+		}
+	}
+}
+public class Program {
+	public static void main(String[] args) {
+		Robot r = new Robot(1);
+	}
+}
+```
+
+> :warning: The class Robot has an inner class Brain. The inner class can access all of the member variables and methods of its outer class, but it cannot be accessed from any outside class.
+
+#### Quiz 02.10.01
+
+**Question**
+
+Rearrange the code to have an inner class Hand, which has a method called "shake" that prints "Hi".
+
+- public void shake() {
+- public class Person {
+- class Hand {
+- }}
+- System.out.println("Hi"); }
+
+**Answer**
+
+- public class Person {
+- class Hand {
+- public void shake() {
+- System.out.println("Hi"); }
+- }}
 
 ### Lesson 02.11: The equals() method
 
