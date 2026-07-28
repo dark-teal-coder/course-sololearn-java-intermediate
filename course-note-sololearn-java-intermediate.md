@@ -1996,6 +1996,74 @@ In Java, how many superclasses can your inherited subclass have?
 - [ ] only two
 - [ ] multiple
 
+#### Interfaces
+
+Use the implements keyword to use an interface with your class.
+
+```java
+interface Animal {
+	public void eat();
+	public void makeSound();
+}
+class Cat implements Animal {
+	public void makeSound() {
+		System.out.println("Meow");
+	}
+	public void eat() {
+		System.out.println("omnomnom");
+	}
+}
+public class Program {
+	public static void main(String[] args) {
+		Cat c = new Cat();
+		c.eat();
+	}
+}
+```
+
+> :warning: When you implement an interface, you need to override all of its methods.
+
+#### Quiz 02.06.02
+
+**Question**
+
+Drag and drop from the options below to implement an interface.
+
+```java
+interface Animal {
+	public void eat();
+}
+_____ Cat implements _____ {
+	public _____ eat() {
+		System.out.println("Cat eats");
+	}
+}
+```
+
+- [ ] `void`
+- [ ] `return`
+- [ ] `class`
+- [ ] `Abstract`
+- [ ] `Animal`
+- [ ] `Cat`
+
+**Answer**
+
+```java
+interface Animal {
+	public void eat();
+}
+class Cat implements Animal {
+	public void eat() {
+		System.out.println("Cat eats");
+	}
+}
+```
+
+1. `class`
+2. `Animal`
+3. `void`
+
 ### Lesson 02.07: Casting
 
 ### Lesson 02.08: Downcasting
