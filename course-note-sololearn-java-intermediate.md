@@ -1880,6 +1880,73 @@ True or false: A class containing an abstract method is an abstract class.
 - [ ] False
 - [x] True
 
+#### Abstract Class
+
+For example, we can define our Animal class as abstract:
+
+```java
+abstract class Animal {
+	int legs = 0;
+	abstract void makeSound();
+}
+```
+
+The makeSound() method is also abstract, as it has no implementation in the superclass.
+
+We can inherit from the Animal class and define the makeSound() method for the subclass:
+
+```java
+abstract class Animal {
+	int legs = 0;
+	abstract void makeSound();
+}
+class Cat extends Animal {
+	public void makeSound() {
+		System.out.println("Meow");
+	}
+}
+public class Program {
+	public static void main(String[] args) {
+		Cat c = new Cat();
+		c.makeSound();
+	}
+}
+```
+
+> :warning: Every Animal makes a sound, but each has a different way to do it. That's why we define an abstract class Animal, and leave the implementation of how they make sounds to the subclasses. This is used when there is no meaningful definition for the method in the superclass.
+
+#### Quiz 02.05.02
+
+**Question**
+
+Fill in the blanks to create an abstract class with an abstract method and inherit from it.
+
+```java
+abstract class Animal {
+	public int age;
+	public _____ int printAge();
+}
+class Dog _____ Animal {
+	public _____ printAge() {
+		return age;
+	}
+}
+```
+
+**Answer**
+
+```java
+abstract class Animal {
+	public int age;
+	public abstract int printAge();
+}
+class Dog extends Animal {
+	public int printAge() {
+		return age;
+	}
+}
+```
+
 ### Lesson 02.06: Interfaces
 
 ### Lesson 02.07: Casting
