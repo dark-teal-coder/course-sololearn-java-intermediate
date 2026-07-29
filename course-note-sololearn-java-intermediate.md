@@ -2987,7 +2987,38 @@ card.greeting();
 
 ### Lesson 03.01: Exception Handling
 
+#### Exceptions
 
+An exception is a problem that occurs during program execution. Exceptions cause abnormal termination of the program.
+
+Exception handling is a powerful mechanism that handles runtime errors to maintain normal application flow.
+
+An exception can occur for many different reasons. Some examples:
+
+- A user has entered invalid data.
+- A file that needs to be opened cannot be found.
+- A network connection has been lost in the middle of communications.
+- Insufficient memory and other issues related to physical resources.
+
+> :warning: As you can see, exceptions are caused by user error, programmer error, or physical resource issues. However, a well-written program should handle all possible exceptions.
+
+#### Quiz 03.01.01
+
+**Question**
+
+Which two of the following statements are true?
+
+- [ ] Exception catching improves program interface design
+- [ ] We cannot catch any exceptions
+- [ ] If we don't catch exceptions, the program can shut down
+- [ ] Exception catching is a good practice
+
+**Answer**
+
+- [ ] Exception catching improves program interface design
+- [ ] We cannot catch any exceptions
+- [x] If we don't catch exceptions, the program can shut down
+- [x] Exception catching is a good practice
 
 ### Lesson 03.02: Multiple Exceptions
 
