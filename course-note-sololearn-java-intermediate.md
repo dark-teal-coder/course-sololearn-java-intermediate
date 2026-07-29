@@ -3079,7 +3079,38 @@ _____ (Exception e) {
 
 ### Lesson 03.02: Multiple Exceptions
 
+#### throw
 
+The throw keyword allows you to manually generate exceptions from your methods. Some of the numerous available exception types include the IndexOutOfBoundsException, IllegalArgumentException, ArithmeticException, and so on.
+
+For example, we can throw an ArithmeticException in our method when the parameter is 0.
+
+```java
+
+```
+
+The `throws` statement in the method definition defines the type of Exception(s) the method can throw.
+
+Next, the `throw` keyword throws the corresponding exception, along with a custom message.
+
+If we call the div method with the second parameter equal to 0, it will throw an ArithmeticException with the message "Division by Zero".
+
+> :warning: Multiple exceptions can be defined in the throws statement using a comma-separated list.
+
+#### Quiz 03.02.01
+
+**Question**
+
+Drag and drop from the options below to create a method that throws an IOException if the parameter is negative.
+
+```java
+public void do(int x) _____ _____ {
+	if(x<0)
+	{
+		_____ _____ IOException();
+	}
+}
+```
 
 ### Lesson 03.03: Threads
 
