@@ -2387,6 +2387,10 @@ Rearrange the code to have an inner class Hand, which has a method called "shake
 
 ### Lesson 02.11: The equals() method
 
+
+
+### Lesson 02.12: Enums
+
 #### Enums
 
 An Enum is a special type used to define collections of constants.
@@ -2429,9 +2433,60 @@ Enums are used to declare variables that represent...
 - [ ] classes
 - [ ] interfaces
 
-### Lesson 02.12: Enums
+#### Enums
 
+After declaring an Enum, we can check for the corresponding values with, for example, a switch statement.
 
+```java
+public class Program {
+	enum Rank {
+		SOLDIER,
+		SERGEANT,
+		CAPTAIN
+	}
+	public static void main(String[] args) {
+		Rank a = Rank.SOLDIER;
+		switch(a) {
+			case SOLDIER:
+				System.out.println("Soldier says hi!");
+				break;
+			case SERGEANT:
+				System.out.println("Sergeant says Hello!");
+				break;
+			case CAPTAIN:
+				System.out.println("Captain says Welcome!");
+				break;
+		}
+	}
+}
+```
+
+#### Quiz 02.11.02
+
+**Question**
+
+Drag and drop from the options below to create an Enum called "Color", with the values RED, BLUE, GREEN.
+
+```java
+public _____ Color {
+RED, _____, GREEN;
+}
+```
+
+- [ ] `GREEN`
+- [ ] `static`
+- [ ] `enum`
+- [ ] `class`
+- [ ] `BLUE`
+- [ ] `RED`
+
+**Answer**
+
+```java
+public enum Color {
+RED, BLUE, GREEN;
+}
+```
 
 ### Lesson 02.13: Using the Java API
 
