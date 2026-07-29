@@ -3302,7 +3302,60 @@ public class App {
 
 ### Lesson 03.04: Runtime vs. Checked Exceptions
 
+#### Types of Exceptions
 
+There are two exception types, checked and unchecked (also called runtime). The main difference is that checked exceptions are checked when compiled, while unchecked exceptions are checked at runtime.
+
+As mentioned in our previous lesson, Thread.sleep() throws an InterruptedException. This is an example of a checked exception. Your code will not compile until you've handled the exception.
+
+<p align="center">
+	<img src="./images/java-intermediate-03-04-p01-a.png" alt="./images/java-intermediate-03-04-p01-a.png" width="50%" height="50%">
+</p>
+
+```java
+public class MyClass {
+	public static void main(String[ ] args) {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			//some code
+		}
+	}
+}
+```
+
+We have seen examples of unchecked exceptions, which are checked at runtime, in previous lessons.
+
+Example (when attempting to divide by 0):
+
+```java
+public class MyClass {
+	public static void main(String[ ] args) {
+		int value = 7;
+		value = value / 0;
+	}
+}
+```
+
+> :warning: It is good to know the Types of Exceptions because they can help you debug your code faster.
+
+#### Quiz 03.04.01
+
+**Question**
+
+If not handled, which exception types prevent your program from compiling?
+
+- [ ] Both checked and runtime
+- [ ] NullPointerException
+- [ ] Runtime
+- [ ] Checked
+
+**Answer**
+
+- [ ] Both checked and runtime
+- [ ] NullPointerException
+- [ ] Runtime
+- [x] Checked
 
 ### Lesson 03.05: ArrayList
 
