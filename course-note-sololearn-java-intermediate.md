@@ -1385,7 +1385,62 @@ What keyword makes a variable a constant?
 
 ### Lesson 01.11: Packages
 
+#### Packages
 
+Packages are used to avoid name conflicts and to control access to classes.
+
+A package can be defined as a group made up of similar types of classes, along with sub-packages.
+
+Creating a package in Java is quite easy. Simply right click on your src directory and click New->Package. Give your package a name and click Finish.
+
+You will notice that the new package appears in the project directory. Now you can move and create classes inside that package. We have moved our Vehicle, Counter and Animal classes to the package samples.
+
+<p align="center">
+    <img src="./images/java-intermediate-01-11-p01-a.png" alt="./images/java-intermediate-01-11-p01-a" width="50%" height="50%">
+</p>
+
+When you move/create a class in your package, the following code will appear at the top of the list of files.
+
+```java
+package samples;
+```
+
+This indicates the package to which the class belongs.
+
+Now, we need to import the classes that are inside a package in our main to be able to use them.
+
+The following example shows how to use the Vehicle class of the samples package.
+
+```java
+import samples.Vehicle;
+
+class MyClass {
+	public static void main(String[ ] args) {
+		Vehicle v1 = new Vehicle();
+		v1.horn();
+	}
+}
+```
+
+Two major results occur when a class is placed in a package. First, the name of the package becomes a part of the name of the class. Second, the name of the package must match the directory structure where the corresponding class file resides.
+
+> :warning: Use a wildcard to import all classes in a package. For example, import samples.* will import all classes in the samples package.
+
+#### Quiz 01.11.01
+
+**Question**
+
+How many packages can be contained in a Java program?
+
+- [ ] none
+- [ ] as many as you need
+- [ ] one
+
+**Answer**
+
+- [ ] none
+- [x] as many as you need
+- [ ] one
 
 ### Quiz 01: Module 1 Quiz
 
