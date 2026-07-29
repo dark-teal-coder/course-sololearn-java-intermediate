@@ -3194,7 +3194,7 @@ When we create the obj object and call its start() method, the run() method stat
 
 > :warning: Every Java thread is prioritized to help the operating system determine the order in which to schedule threads. The priorities range from 1 to 10, with each thread defaulting to priority 5. You can set the thread priority with the setPriority() method.
 
-#### Quiz 03.02.02
+#### Quiz 03.03.01
 
 **Question**
 
@@ -3222,6 +3222,80 @@ class A extends Thread {
 	public static void main(String[ ] args) {
 		A object = new A();
 		object.start();
+	}
+}
+```
+
+#### Threads
+
+The other way of creating Threads is implementing the Runnable interface.
+
+Implement the run() method. Then, create a new Thread object, pass the Runnable class to its constructor, and start the Thread by calling the start() method.
+
+Example:
+
+```java
+class Loader implements Runnable {
+	public void run() {
+		System.out.println("Hello");
+	}
+}
+class MyClass {
+	public static void main(String[ ] args) {
+		Thread t = new Thread(new Loader());
+		t.start();
+	}
+}
+```
+
+The Thread.sleep() method pauses a Thread for a specified period of time. For example, calling Thread.sleep(1000); pauses the thread for one second. Keep in mind that Thread.sleep() throws an InterruptedException, so be sure to surround it with a try/catch block.
+
+> :warning: It may seem that implementing the Runnable interface is a bit more complex than extending from the Thread class. However, implementing the Runnable interface is the preferred way to start a Thread, because it enables you to extend from another class, as well.
+
+#### Quiz 03.03.02
+
+**Question**
+
+Drag and drop from the options below to implement the Runnable interface and run a new thread.
+
+```java
+class A _____ _____ {
+	public void run() {
+		System.out.println("Bye");
+	}
+}
+public class App {
+	public static void main(String[ ] args) {
+		Thread ob = new Thread(new _____());
+		ob._____();
+	}
+}
+```
+
+- [ ] `start`
+- [ ] `A`
+- [ ] `App`
+- [ ] `Runnable`
+- [ ] `implements`
+- [ ] `Thread`
+
+**Answer**
+
+1. `implements`
+2. `Runnable`
+3. `A`
+4. `start`
+
+```java
+class A implements Runnable {
+	public void run() {
+		System.out.println("Bye");
+	}
+}
+public class App {
+	public static void main(String[ ] args) {
+		Thread ob = new Thread(new A());
+		ob.start();
 	}
 }
 ```
