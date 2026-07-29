@@ -2371,19 +2371,19 @@ public class Program {
 
 Rearrange the code to have an inner class Hand, which has a method called "shake" that prints "Hi".
 
-- public void shake() {
-- public class Person {
-- class Hand {
-- }}
-- System.out.println("Hi"); }
+- `public void shake() {`
+- `public class Person {`
+- `class Hand {`
+- `}}`
+- `System.out.println("Hi"); }`
 
 **Answer**
 
-- public class Person {
-- class Hand {
-- public void shake() {
-- System.out.println("Hi"); }
-- }}
+- `public class Person {`
+- `class Hand {`
+- `public void shake() {`
+- `System.out.println("Hi"); }`
+- `}}`
 
 ### Lesson 02.11: The equals() method
 
