@@ -3020,6 +3020,63 @@ Which two of the following statements are true?
 - [x] If we don't catch exceptions, the program can shut down
 - [x] Exception catching is a good practice
 
+#### Exception Handling
+
+Exceptions can be caught using a combination of the try and catch keywords.
+
+A try/catch block is placed around the code that might generate an exception.
+
+Syntax:
+
+```java
+try {
+	//some code
+} catch (Exception e) {
+	//some code to handle errors
+}
+```
+
+A catch statement involves declaring the type of exception you are trying to catch. If an exception occurs in the try block, the catch block that follows the try is checked. If the type of exception that occurred is listed in a catch block, the exception is passed to the catch block much as an argument is passed into a method parameter.
+
+The Exception type can be used to catch all possible exceptions.
+
+The example below demonstrates exception handling when trying to access an array index that does not exist:
+
+```java
+public class MyClass {
+	public static void main(String[ ] args) {
+		try {
+			int a[ ] = new int[2];
+			System.out.println(a[5]);
+		} catch (Exception e) {
+			System.out.println("An error occurred");
+		}
+	}
+}
+```
+
+Without the try/catch block this code should crash the program, as a[5] does not exist.
+
+> :warning: Notice the (Exception e) statement in the catch block - it is used to catch all possible Exceptions.
+
+#### Quiz 03.01.02
+
+**Question**
+
+Fill in the blanks to handle any possible exceptions.
+
+```java
+int x = 12;
+int y = 0;
+_____ {
+	int z = x / y;
+	System.out.println(z);
+}
+_____ (Exception e) {
+	System.out.println("Error");
+}
+```
+
 ### Lesson 03.02: Multiple Exceptions
 
 
