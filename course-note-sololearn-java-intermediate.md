@@ -2488,6 +2488,46 @@ RED, BLUE, GREEN;
 }
 ```
 
+#### Enums
+
+You should always use Enums when a variable (especially a method parameter) can only take one out of a small set of possible values.
+
+If you use Enums instead of integers (or String codes), you increase compile-time checking and avoid errors from passing in invalid constants, and you document which values are legal to use.
+
+> :warning: Some sample Enum uses include month names, days of the week, deck of cards, etc.
+
+#### Quiz 02.11.03
+
+**Question**
+
+What is the output of this code?
+
+```java
+enum Color  {
+	RED, BLUE, GREEN;
+}
+class PrintColor {
+	public static void main(String[ ] args) {
+		Color color = Color.RED; 
+		switch(color) {
+			case BLUE:
+				System.out.println("1");
+				break;
+			case GREEN:
+				System.out.println("2");
+				break;
+			default:
+				System.out.println("0");
+				break;  
+		}
+	}
+}
+```
+
+**Answer**
+
+`0`
+
 ### Lesson 02.13: Using the Java API
 
 
