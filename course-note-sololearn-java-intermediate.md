@@ -1373,9 +1373,19 @@ PI is now a constant. Any attempt to assign it a value will cause an error.
 
 > :warning: Methods and classes can also be marked final. This serves to restrict methods so that they can't be overridden and classes so that they can't be subclassed.<br>These concepts will be covered in the next module.
 
+#### Quiz 01.10.01
 
+**Question**
+
+What keyword makes a variable a constant?
+
+**Answer**
+
+`final`
 
 ### Lesson 01.11: Packages
+
+
 
 ### Quiz 01: Module 1 Quiz
 
