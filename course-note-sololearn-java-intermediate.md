@@ -2387,7 +2387,47 @@ Rearrange the code to have an inner class Hand, which has a method called "shake
 
 ### Lesson 02.11: The equals() method
 
+#### Enums
 
+An Enum is a special type used to define collections of constants.
+
+Here is a simple Enum example:
+
+```java
+enum Rank {
+	SOLDIER,
+	SERGEANT,
+	CAPTAIN
+}
+```
+
+Note that the values are comma-separated.
+
+You can refer to the constants in the enum above with the dot syntax.
+
+```java
+Rank a = Rank.SOLDIER;
+```
+
+> :warning: Basically, Enums define variables that represent members of a fixed set.
+
+#### Quiz 02.11.01
+
+**Question**
+
+Enums are used to declare variables that represent...
+
+- [ ] integers
+- [ ] members of a fixed set
+- [ ] classes
+- [ ] interfaces
+
+**Answer**
+
+- [ ] integers
+- [x] members of a fixed set
+- [ ] classes
+- [ ] interfaces
 
 ### Lesson 02.12: Enums
 
