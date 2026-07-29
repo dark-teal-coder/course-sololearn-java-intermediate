@@ -2387,7 +2387,60 @@ Rearrange the code to have an inner class Hand, which has a method called "shake
 
 ### Lesson 02.11: The equals() method
 
+#### Comparing Objects
 
+Remember that when you create objects, the variables store references to the objects.
+
+So, when you compare objects using the equality testing operator (==), it actually compares the references and not the object values.
+
+Example:
+
+```java
+class Animal {
+	String name;
+	Animal(String n) {
+		name = n;
+	}
+}
+class MyClass {
+	public static void main(String[ ] args) {
+		Animal a1 = new Animal("Robby");
+		Animal a2 = new Animal("Robby");
+		System.out.println(a1 == a2);
+	}
+}
+```
+
+> :warning: Despite having two objects with the same name, the equality testing returns false, because we have two different objects (two different references or memory locations).
+
+#### Quiz 02.11.01
+
+**Question**
+
+What is the output of this code?
+
+```java
+class A {
+	private int x; 
+	public static void main(String[ ] args) {
+		A a = new A();
+		a.x = 5;
+		A b = new A();
+		b.x = 5;
+		System.out.println(a == b); 
+	}
+}
+```
+
+- [ ] true
+- [ ] undefined
+- [ ] false
+
+**Answer**
+
+- [ ] true
+- [ ] undefined
+- [x] false
 
 ### Lesson 02.12: Enums
 
@@ -2415,7 +2468,7 @@ Rank a = Rank.SOLDIER;
 
 > :warning: Basically, Enums define variables that represent members of a fixed set.
 
-#### Quiz 02.11.01
+#### Quiz 02.12.01
 
 **Question**
 
@@ -2461,7 +2514,7 @@ public class Program {
 }
 ```
 
-#### Quiz 02.11.02
+#### Quiz 02.12.02
 
 **Question**
 
@@ -2496,7 +2549,7 @@ If you use Enums instead of integers (or String codes), you increase compile-tim
 
 > :warning: Some sample Enum uses include month names, days of the week, deck of cards, etc.
 
-#### Quiz 02.11.03
+#### Quiz 02.12.03
 
 **Question**
 
