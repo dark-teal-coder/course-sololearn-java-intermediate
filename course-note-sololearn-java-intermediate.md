@@ -2550,7 +2550,7 @@ class A {
 	public static void main(String[ ] args) {
 		A a = new A();
 		a.x = 9;
-		A b = new ______ ();
+		A b = new ______();
 		b.x = 5;
 		System.out.println(a.______(b));
 	}
@@ -2567,7 +2567,26 @@ class A {
 
 **Answer**
 
+1. `boolean`
+2. `return`
+3. `A`
+4. `equals`
 
+```java
+class A {
+	private int x;
+	public boolean equals(Object o) {
+		return ((A)o).x == this.x;
+	}
+	public static void main(String[ ] args) {
+		A a = new A();
+		a.x = 9;
+		A b = new A();
+		b.x = 5;
+		System.out.println(a.equals(b));
+	}
+}
+```
 
 ### Lesson 02.12: Enums
 
