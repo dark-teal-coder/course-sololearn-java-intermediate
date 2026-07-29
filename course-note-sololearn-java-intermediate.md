@@ -2900,7 +2900,82 @@ import java.awt.*;
 
 ### Quiz 02: Module 2 Quiz
 
+**Question M02.01**
 
+What is the output of this code?
+
+```java
+class A {
+	private void print() {
+		System.out.println(''a'');
+	}
+	private void print(String str) {
+		System.out.println(''b'');
+	}
+	private void print(int x) {
+		System.out.println(''c'');
+	} 
+	public static void main(String[ ] args) { 
+		A object = new A();
+		object.print(12); 
+	} 
+}
+```
+
+**Question M02.02**
+
+Fill in the blanks to define a new class Falcon, based on the superclass Bird.
+
+```java
+_____ Falcon _____ Bird {
+}
+```
+
+**Question M02.03**
+
+Object variables store...
+
+- [ ] Objects
+- [ ] Classes
+- [ ] Strings
+- [ ] References
+
+**Question M02.04**
+
+What term is used for hiding the details of an object from the other parts of a program?
+
+- [ ] Data Mining
+- [ ] Inheritance
+- [ ] Polymorphism
+- [ ] Encapsulation
+
+**Question M02.05**
+
+A class Car and its subclass BMW each have a method run(), which was written by the developer as part of the class definition. If CarObj refers to an object of type BMW, what will CarObj.run(); do?
+
+- [ ] The run() method defined in Car will be called.
+- [ ] The run() method defined in BMW will be called.
+- [ ] The compiler will complain that run() has been defined twice.
+
+**Question M02.06**
+
+Valentine, Holiday, and Birthday inherit from the class Card. In order for the following code to be correct, what type must the reference variable card be?
+
+```java
+card = new Valentine( "A", 14 ) ;
+card.greeting();
+card = new Holiday( "B" ) ;
+card.greeting();
+card = new Birthday( "C", 12 ) ;
+card.greeting();
+```
+
+- [ ] Birthday
+- [ ] Card
+- [ ] Valentine
+- [ ] Holiday
+
+[Check Module 02 Quiz Answers](./module-quiz-solutions/module-02-quiz-solutions.md)
 
 &nbsp;
 
