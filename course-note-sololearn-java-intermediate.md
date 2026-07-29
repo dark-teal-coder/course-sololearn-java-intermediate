@@ -2452,7 +2452,9 @@ There is a simple and fast way of generating the equals() method, other than wri
 
 Just right click in your class, go to Source->Generate hashCode() and equals()... 
 
-
+<p align="center">
+    <img src="./images/java-intermediate-02-11-p02-a.png" alt="./images/java-intermediate-02-11-p02-a" width="50%" height="50%">
+</p>
 
 This will automatically create the necessary methods.
 
