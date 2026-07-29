@@ -3359,6 +3359,61 @@ If not handled, which exception types prevent your program from compiling?
 
 ### Lesson 03.05: ArrayList
 
+#### ArrayList
+
+The Java API provides special classes to store and manipulate groups of objects.
+
+One such class is the ArrayList. Standard Java arrays are of a fixed length, which means that after they are created, they cannot expand or shrink.
+
+On the other hand, ArrayLists are created with an initial size, but when this size is exceeded, the collection is automatically enlarged.
+
+When objects are removed, the ArrayList may shrink in size. Note that the ArrayList class is in the java.util package, so it's necessary to import it before using it.
+
+Create an ArrayList as you would any object.
+
+```java
+import java.util.ArrayList;
+//...
+ArrayList colors = new ArrayList();
+```
+
+You can optionally specify a capacity and type of objects the ArrayList will hold:
+
+```java
+ArrayList<String> colors = new ArrayList<String>(10);
+```
+
+The code above defines an ArrayList of Strings with 10 as its initial size.
+
+> :warning: ArrayLists store objects. Thus, the type specified must be a class type. You cannot pass, for example, int as the objects' type. Instead, use the special class types that correspond to the desired value type, such as Integer for int, Double for double, and so on.
+
+#### Quiz 03.05.01
+
+**Question**
+
+Drag and drop from the options below to declare an ArrayList to hold 9 Integers.
+
+```java
+ArrayList<_____> ar = _____ _____<Integer>(9);
+```
+
+- `String`
+- `ArrayList`
+- `array`
+- `count`
+- `Integer`
+- `new`
+
+**Answer**
+
+1. `Integer`
+2. `new`
+3. `ArrayList`
+
+```java
+ArrayList<Integer> ar = new ArrayList<Integer>(9);
+```
+
 
 
 ### Lesson 03.06: LinkedLists
