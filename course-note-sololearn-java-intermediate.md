@@ -3414,7 +3414,54 @@ ArrayList<_____> ar = _____ _____<Integer>(9);
 ArrayList<Integer> ar = new ArrayList<Integer>(9);
 ```
 
+#### ArrayList
 
+The ArrayList class provides a number of useful methods for manipulating its objects.
+
+The `add()` method adds new objects to the ArrayList. Conversely, the remove() method removes objects from the ArrayList.
+
+Example:
+
+```java
+import java.util.ArrayList;
+
+public class MyClass {
+	public static void main(String[ ] args) {
+		ArrayList<String> colors = new ArrayList<String>();
+		colors.add("Red");
+		colors.add("Blue");
+		colors.add("Green");
+		colors.add("Orange");
+		colors.remove("Green");
+		System.out.println(colors);
+	}
+}
+```
+
+> :warning: Other useful methods include the following:
+<br>- contains(): Returns true if the list contains the specified element
+<br>- get(int index): Returns the element at the specified position in the list
+<br>- size(): Returns the number of elements in the list
+<br>- clear(): Removes all of the elements from the list
+<br>Note: As with arrays, the indexing starts with 0.
+
+#### Quiz 03.05.02
+
+**Question**
+
+What is the output of this code?
+
+```java
+ArrayList<String> list = new ArrayList<String>();
+list.add("A");
+list.add("B");
+list.add("C");
+System.out.println(list.get(1));
+```
+
+- [ ] A
+- [ ] B
+- [ ] C
 
 ### Lesson 03.06: LinkedLists
 
