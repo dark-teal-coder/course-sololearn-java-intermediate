@@ -1444,7 +1444,71 @@ How many packages can be contained in a Java program?
 
 ### Quiz 01: Module 1 Quiz
 
+**Question M01.01**
 
+Fill in the blank to define a method that does not return a value.
+
+```java
+public _____ calc()
+```
+
+**Question M01.02**
+
+Which access modifier explicitly says that a method or variable of an object can be accessed by code from outside of the class of that object?
+
+- [ ] default
+- [ ] static
+- [ ] public
+- [ ] private
+
+**Question M01.03**
+
+Rearrange the code to declare a method returning the greater of the two arguments.
+
+- `return a; }`
+- `}`
+- `return b;`
+- `if (a > b) {`
+- `public int max(int a, int b) {`
+
+**Question M01.04**
+
+Fill in the blanks to declare a method that takes one argument of type int.
+
+```java
+public int myFunc(_____ x) _____
+	return x*10;
+_____
+```
+
+**Question M01.05**
+
+Fill in the blanks to create a method that returns the minimum of the two parameters.
+
+```java
+public int minFunc(int n1, int n2 _____ {
+	int min;
+	if (n1 > n2)
+		min = _____;
+	_____
+		min = n1; 
+	_____ min; 
+}
+```
+
+**Question M01.06**
+
+Fill in the blanks to create a class with a method called "myFunc" that takes no parameters, returns void, and prints "Hi" to the screen.
+
+```java
+public _____ MyClass _____
+	public _____ myFunc _____{
+		System.out.println(''Hi'');
+	}
+}
+```
+
+[Check Module 01 Quiz Answers](./module-quiz-solutions/module-01-quiz-solutions.md)
 
 &nbsp;
 
