@@ -2729,7 +2729,43 @@ class PrintColor {
 
 ### Lesson 02.13: Using the Java API
 
+#### Java API
 
+The Java API is a collection of classes and interfaces that have been written for you to use.
+
+The Java API Documentation with all of the available APIs can be located on the Oracle website at 
+
+http://docs.oracle.com/javase/7/docs/api/
+
+Once you locate the package you want to use, you need to import it into your code.
+
+The package can be imported using the import keyword.
+
+For example:
+
+```java
+import java.awt.*;
+```
+
+The awt package contains all of the classes for creating user interfaces and for painting graphics and images.
+
+> :warning: The wildcard character (*) is used to import all of the classes in the package.
+
+#### Quiz 02.13.01
+
+**Question**
+
+Fill in the blank to import all types in the package awt.
+
+```java
+_____ java.awt._____;
+```
+
+**Answer**
+
+```java
+import java.awt.*;
+```
 
 ### Quiz 02: Module 2 Quiz
 
