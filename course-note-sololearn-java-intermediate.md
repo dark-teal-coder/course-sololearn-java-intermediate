@@ -3496,7 +3496,7 @@ public class MyClass {
 Drag and drop from the options below to create a LinkedList, add "Hey", and print it.
 
 ```java
-_____ <String> list = new LinkedList _____();
+_____<String> list = new LinkedList_____();
 list.add(_____);
 System.out.println(list.get(_____));
 ```
@@ -3511,7 +3511,16 @@ System.out.println(list.get(_____));
 
 **Answer**
 
+1. `LinkedList`
+2. `<String>`
+3. `"Hey"`
+4. `0`
 
+```java
+LinkedList<String> list = new LinkedList<String>();
+list.add("Hey");
+System.out.println(list.get(0));
+```
 
 #### LinkedList vs. ArrayList
 
