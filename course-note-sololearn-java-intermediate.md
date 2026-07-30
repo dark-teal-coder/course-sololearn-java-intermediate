@@ -3576,6 +3576,65 @@ For a program with large numbers of inserts and deletes, it is better to use the
 
 ### Lesson 03.07: HashMap
 
+#### HashMap
+
+Arrays and Lists store elements as ordered collections, with each element given an integer index.
+
+HashMap is used for storing data collections as key and value pairs. One object is used as a key (index) to another object (the value). 
+
+The put, remove, and get methods are used to add, delete, and access values in the HashMap.
+
+Example:
+
+```java
+import java.util.HashMap;
+
+public class MyClass {
+	public static void main(String[ ] args) {
+		HashMap<String, Integer> points = new HashMap<String, Integer>();
+		points.put("Amy", 154);
+		points.put("Dave", 42);
+		points.put("Rob", 733);
+		System.out.println(points.get("Dave")); 
+	}
+}
+```
+
+We have created a HashMap with Strings as its keys and Integers as its values.
+
+> :warning: Use the get method and the corresponding key to access the HashMap elements.
+
+#### Quiz 03.07.01
+
+**Question**
+
+What is the output of this code?
+
+```java
+import java.util.HashMap;
+class A {	
+	public static void main(String[ ] args) {
+		HashMap<String, String> m = new HashMap<String, String>();
+		m.put("A", "First");
+		m.put("B", "Second");
+		m.put("C", "Third");
+		System.out.println(m.get("B"));
+	}
+}
+```
+
+- [ ] Third
+- [ ] Second
+- [ ] Nothing
+- [ ] First
+
+**Answer**
+
+- [ ] Third
+- [x] Second
+- [ ] Nothing
+- [ ] First
+
 
 
 ### Lesson 03.08: Sets
