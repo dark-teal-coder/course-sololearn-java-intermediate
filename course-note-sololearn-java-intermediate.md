@@ -3959,7 +3959,70 @@ while (it.hasNext()) {
 
 ### Lesson 03.11: Working with Files
 
+#### Working with Files
 
+The java.io package includes a File class that allows you to work with files.
+
+To start, create a <b>File </b>object and specify the path of the file in the constructor.
+
+```java
+import java.io.File;
+...
+File file = new File("C:\\data\\input-file.txt");
+```
+
+With the <b>exists()</b> method, you can determine whether a file exists.
+
+```java
+import java.io.File;
+
+public class MyClass {
+	public static void main(String[ ] args) {
+		File x = new File("C:\\sololearn\\test.txt");
+		if(x.exists()) {
+			System.out.println(x.getName() +  "exists!");
+		}
+		else { 
+			System.out.println("The file does not exist");
+		}
+	}
+}
+```
+
+The code above prints a message stating whether or not the file exists at the specified path.
+
+> :warning: The <b>getName()</b> method returns the name of the file.
+<br>Note that we used double backslashes in the path, as one backslash should be escaped in the path String.
+
+#### Quiz 03.11.01
+
+**Question**
+
+Fill in the blanks to determine whether the file exists.
+
+```java
+class A {
+	public static void main(String args[ ]) {
+		File file = _____ File("a.txt");
+		if(file._____()) {
+		System.out.println("Yes");
+		}
+	}
+}
+```
+
+**Answer**
+
+```java
+class A {
+	public static void main(String args[ ]) {
+		File file = new File("a.txt");
+		if(file.exists()) {
+		System.out.println("Yes");
+		}
+	}
+}
+```
 
 ### Lesson 03.12: Reading a File
 
