@@ -4065,7 +4065,80 @@ Which class can be used for reading files?
 - [x] Scanner
 - [ ] Set
 
+#### Reading a File
 
+The <b>Scanner </b>class inherits from the <b>Iterator</b>, so it behaves like one.
+
+We can use the Scanner object's <b>next()</b> method to read the file's contents.
+
+```java
+try {
+	File x = new File("C:\\sololearn\\test.txt");
+	Scanner sc = new Scanner(x);
+	while(sc.hasNext()) {
+		System.out.println(sc.next());
+	}
+	sc.close();
+} catch (FileNotFoundException e) {
+	System.out.println("Error");
+}
+```
+
+The file's contents are output word by word, because the <b>next()</b> method returns each word separately.
+
+> :warning: It is always good practice to close a file when finished working with it. One way to do this is to use the Scanner's <b>close()</b> method.
+
+#### Quiz 03.12.02
+
+**Question**
+
+Drag and drop from the options below to read and print the content of the file a.txt, and then close it.
+
+```java
+try {
+	File f = new File("a.txt");
+	Scanner sc = new _____(f);
+	while (sc.hasNext()) {
+		String a = _____.next();
+		String b = sc._____();
+		System.out.println(a + " " + b);
+	}
+	sc._____();
+}
+catch (Exception e) {
+	System.out.println("Error");
+}
+```
+
+- [ ] `new`
+- [ ] `next`
+- [ ] `sc`
+- [ ] `File`
+- [ ] `close`
+- [ ] `Scanner`
+
+**Answer**
+
+1. `Scanner`
+2. `sc`
+3. `next`
+3. `close`
+
+```java
+try {
+	File f = new File("a.txt");
+	Scanner sc = new Scanner(f);
+	while (sc.hasNext()) {
+		String a = sc.next();
+		String b = sc.next();
+		System.out.println(a + " " + b);
+	}
+	sc.close();
+}
+catch (Exception e) {
+	System.out.println("Error");
+}
+```
 
 ### Lesson 03.13: Creating & Writing Files
 
