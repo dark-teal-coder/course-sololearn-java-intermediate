@@ -3532,7 +3532,9 @@ The LinkedList is better for manipulating data, such as making numerous inserts 
 
 In addition to storing the object, the LinkedList stores the memory address (or link) of the element that follows it. It's called a LinkedList because each element contains a link to the neighboring element.
 
-
+<p align="center">
+	<img src="./images/java-intermediate-03-06-p02-a.png" alt="./images/java-intermediate-03-06-p02-a.png" width="50%" height="50%">
+</p>
 
 You can use the enhanced for loop to iterate over its elements.
 
