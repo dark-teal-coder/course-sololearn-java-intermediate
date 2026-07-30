@@ -3669,6 +3669,53 @@ System.out.println(m.get("B"));
 
 ### Lesson 03.08: Sets
 
+#### Sets
+
+A Set is a collection that cannot contain duplicate elements. It models the mathematical set abstraction.
+
+One of the implementations of the Set is the HashSet class.
+
+Example:
+
+```java
+import java.util.HashSet;
+
+public class MyClass {
+	public static void main(String[ ] args) {
+		HashSet<String> set = new HashSet<String>();
+		set.add("A");
+		set.add("B");
+		set.add("C");
+		System.out.println(set);
+	}
+}
+```
+
+> :warning: You can use the size() method to get the number of elements in the HashSet.
+
+#### Quiz 03.08.01
+
+**Question**
+
+What is the output of this code?
+
+```java
+import java.util.HashSet;
+class A {
+	public static void main(String[ ] args) {
+		HashSet<String> set = new HashSet<String>();
+		set.add("A");
+		set.add("B");	
+		set.add("C");
+		System.out.println(set.size());
+	}
+}
+```
+
+**Answer**
+
+`3`
+
 
 
 ### Lesson 03.09: Sorting Lists
