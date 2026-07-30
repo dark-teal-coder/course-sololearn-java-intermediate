@@ -3794,7 +3794,48 @@ System.out.println(list.get(0));
 
 `a`
 
+#### Sorting Lists
 
+You can call the sort() methods on different types of Lists, such as Integers.
+
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class MyClass {
+	public static void main(String[ ] args) {
+		ArrayList<Integer> nums = new ArrayList<Integer>();
+		nums.add(3);
+		nums.add(36);
+		nums.add(73);
+		nums.add(40);
+		nums.add(1);
+		Collections.sort(nums);
+		System.out.println(nums);
+	}
+}
+```
+
+> :warning: Other useful methods in the <b>Collections </b>class:
+<br>max(Collection c): Returns the maximum element in c as determined by natural ordering.
+<br>min(Collection c): Returns the minimum element in c as determined by natural ordering.
+<br>reverse(List list): Reverses the sequence in list.
+<br>shuffle(List list): Shuffles (i.e., randomizes) the elements in list.
+
+#### Quiz 03.09.02
+
+**Question**
+
+Fill in the blanks to add three items to the list, sort it,  and print 2.
+
+```java
+List<Integer> list = new ArrayList<Integer>();
+list._____(4);
+list.add(2);
+_____.add(1);
+Collections._____(list);
+System.out.println(list.get(_____));
+```
 
 ### Lesson 03.10: Iterators
 
