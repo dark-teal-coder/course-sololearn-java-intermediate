@@ -3895,6 +3895,68 @@ System.out.println(it.next());
 
 `20`
 
+#### Iterators
+
+Typically, iterators are used in loops. At each iteration of the loop, you can access the corresponding list element.
+
+Example:
+
+```java
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class MyClass {
+	public static void main(String[ ] args) {
+		LinkedList<String> animals = new LinkedList<String>();
+		animals.add("fox");
+		animals.add("cat");
+		animals.add("dog");
+		animals.add("rabbit");
+		Iterator<String> it = animals.iterator();
+		while(it.hasNext()) {
+			String value = it.next();
+			System.out.println(value);   
+		}
+	}
+}
+```
+
+> :warning: Here, the while loop determines whether the iterator has additional elements, prints the value of the element, and advances the iterator to the next.
+
+#### Quiz 03.10.02
+
+**Question**
+
+Drag and drop from the options below to iterate and print all of the items in the list of Integers.
+
+```java
+_____<_____> it = list._____();
+while (it._____()) {
+	System.out.println(it._____());
+}
+```
+
+- `iterator`
+- `hasNext`
+- `next`
+- `Iterator`
+- `Integer`
+
+**Answer**
+
+1. `Iterator`
+2. `Integer`
+3. `iterator`
+4. `hasNext`
+5. `next`
+
+```java
+Iterator<Integer> it = list.iterator();
+while (it.hasNext()) {
+	System.out.println(it.next());
+}
+```
+
 ### Lesson 03.11: Working with Files
 
 
