@@ -3716,7 +3716,35 @@ class A {
 
 `3`
 
+#### LinkedHashSet
 
+The HashSet class does not automatically retain the order of the elements as they're added. To order the elements, use a LinkedHashSet, which maintains a linked list of the set's elements in the order in which they were inserted.
+
+What is hashing?
+
+A hash table stores information through a mechanism called hashing, in which a key's informational content is used to determine a unique value called a hash code.
+
+So, basically, each element in the HashSet is associated with its unique hash code.
+
+> :warning: You've learned about the various collection types that are available in Java, including Lists, Maps, and Sets. The choice of which one to use is specific to the data you need to store and manipulate.
+
+#### Quiz 03.08.02
+
+**Question**
+
+Which two of the following statements are true?
+
+- [ ] HashSet does not retain order.
+- [ ] Set contains only unique values.
+- [ ] Set can contain duplicate values.
+- [ ] LinkedHashSet does not retain order.
+
+**Answer**
+
+- [x] HashSet does not retain order.
+- [x] Set contains only unique values.
+- [ ] Set can contain duplicate values.
+- [ ] LinkedHashSet does not retain order.
 
 ### Lesson 03.09: Sorting Lists
 
