@@ -4026,6 +4026,45 @@ class A {
 
 ### Lesson 03.12: Reading a File
 
+#### Reading a File
+
+Files are useful for storing and retrieving data, and there are a number of ways to read from a file.
+
+One of the simplest ways is to use the `Scanner` class from the java.util package.
+
+The constructor of the `Scanner` class can take a File object as input.
+
+To read the contents of a text file at the path "C:\\sololearn\\test.txt", we would need to create a File object with the corresponding path and pass it to the Scanner object.
+
+```java
+try {
+	File x = new File("C:\\sololearn\\test.txt");
+	Scanner sc = new Scanner(x);      
+}
+	catch (FileNotFoundException e) {
+}
+```
+
+> :warning: We surrounded the code with a try/catch block, because there's a chance that the file may not exist.
+
+#### Quiz 03.12.01
+
+**Question**
+
+Which class can be used for reading files?
+
+- [ ] HashMap
+- [ ] ArrayList
+- [ ] Scanner
+- [ ] Set
+
+**Answer**
+
+- [ ] HashMap
+- [ ] ArrayList
+- [x] Scanner
+- [ ] Set
+
 
 
 ### Lesson 03.13: Creating & Writing Files
