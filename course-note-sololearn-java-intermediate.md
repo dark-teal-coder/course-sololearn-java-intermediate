@@ -3635,7 +3635,37 @@ class A {
 - [ ] Nothing
 - [ ] First
 
+#### HashMap
 
+A HashMap cannot contain duplicate keys. Adding a new item with a key that already exists overwrites the old element.
+
+The HashMap class provides <b>containsKey </b>and <b>containsValue </b>methods that determine the presence of a specified key or value.
+
+If you try to get a value that is not present in your map, it returns the value of null.
+
+> :warning: null is a special type that represents the absence of a value.
+
+#### Quiz 03.07.02
+
+**Question**
+
+Fill in the blanks to declare a HashMap, add two items, and print one of them.
+
+```java
+HashMap<String, String> m = _____ HashMap<String, String>();
+m.put("A", "First");
+m._____("B", "Second");
+System.out.println(m._____("B"));
+```
+
+**Answer**
+
+```java
+HashMap<String, String> m = new HashMap<String, String>();
+m.put("A", "First");
+m.put("B", "Second");
+System.out.println(m.get("B"));
+```
 
 ### Lesson 03.08: Sets
 
