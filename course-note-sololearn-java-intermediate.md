@@ -3465,7 +3465,49 @@ System.out.println(list.get(1));
 
 ### Lesson 03.06: LinkedLists
 
+#### LinkedList
 
+The LinkedList is very similar in syntax to the ArrayList.
+
+You can easily change an ArrayList to a LinkedList by changing the object type.
+
+```java
+import java.util.LinkedList;
+
+public class MyClass {
+	public static void main(String[ ] args) {
+		LinkedList<String> c = new LinkedList<String>();
+		c.add("Red");
+		c.add("Blue");
+		c.add("Green");
+		c.add("Orange");
+		c.remove("Green");
+		System.out.println(c);
+	}
+}
+```
+
+> :warning: You cannot specify an initial capacity for the LinkedList.
+
+#### Quiz 03.06.01
+
+**Question**
+
+Drag and drop from the options below to create a LinkedList, add "Hey", and print it.
+
+```java
+_____ <String> list = new LinkedList _____();
+list.add(_____);
+System.out.println(list.get(_____));
+```
+
+- `1`
+- `LinkedList`
+- `<String>`
+- `"Hey"`
+- `0`
+- `"Bye"`
+- `ArrayList`
 
 ### Lesson 03.07: HashMap
 
