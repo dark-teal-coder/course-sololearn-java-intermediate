@@ -3748,6 +3748,52 @@ Which two of the following statements are true?
 
 ### Lesson 03.09: Sorting Lists
 
+#### Sorting Lists 
+
+For the manipulation of data in different collection types, the Java API provides a Collections class, which is included in the java.util package.
+
+One of the most popular Collections class methods is sort(), which sorts the elements of your collection type. The methods in the Collections class are static, so you don't need a Collections object to call them.
+
+Example:
+
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class MyClass {
+	public static void main(String[ ] args) {
+		ArrayList<String> animals = new ArrayList<String>();
+		animals.add("tiger");
+		animals.add("cat");
+		animals.add("snake");
+		animals.add("dog");
+		Collections.sort(animals);
+		System.out.println(animals);
+	}
+}
+```
+
+> :warning: As you can see, the elements have been sorted alphabetically.
+
+#### Quiz 03.09.01
+
+**Question**
+
+What is the output of this code?
+
+```java
+List<String> list = new ArrayList<String>();
+list.add("b");
+list.add("a");
+list.add("c");
+Collections.sort(list);
+System.out.println(list.get(0));
+```
+
+**Answer**
+
+`a`
+
 
 
 ### Lesson 03.10: Iterators
