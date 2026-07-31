@@ -4251,4 +4251,90 @@ Rearrange the code to write "Hi there" to the file.
 
 ### Quiz 03: Module 3 Quiz
 
+**Question M03.01**
 
+Fill in the blanks to declare a function that takes two integers as arguments and prints their division. Handle the possible exception.
+
+```java
+void myFunc(int a, _____ b) {
+	_____ {
+		System.out.println(a _____ b);
+	}
+	_____ (Exception e) {
+		System.out.println("Error");
+	}
+}
+```
+
+**Question M03.02**
+
+Fill in the blanks to define a function ''myFunc'', which throws an exception if its parameter is less than 0.
+
+```java
+void myFunc(int arg) _____ IllegalArgumentException{
+	_____ (arg < _____)
+	throw _____ IllegalArgumentException();
+}
+```
+
+**Question M03.03**
+
+How many lines of output will this code produce?
+
+```java
+class B implements Runnable {
+	public void run() {
+		System.out.println("B");	
+	}
+}
+class A extends Thread {
+	public void run() {
+		System.out.println("A");
+		Thread t = new Thread(new B());
+		t.start();
+	}
+	public static void main(String[ ] args) {
+		A object = new A();
+		object.start();
+	}
+}
+```
+
+**Question M03.04**
+
+Which two options allow you to create new threads?
+
+- [ ] name your class "Thread"
+- [ ] handle exceptions
+- [ ] implement Runnable
+- [ ] extend the Thread class
+
+**Question M03.05**
+
+What is the output of this code?
+
+```java
+ArrayList<Integer> list = new ArrayList<Integer>();
+for (int i = 0; i < 6; i++) {
+	list.add(i);
+}
+int x = 0;
+Iterator<Integer> it = list.iterator();
+while (it.hasNext()) {
+	x+= it.next();	
+}
+System.out.println(x);
+```
+
+**Question M03.06**
+
+What is the output of the following code?
+
+```java
+int f=1, i=2;
+while(++i<5)
+	f*=i;
+System.out.println(f);
+```
+
+[Check Module 03 Quiz Answers](./module-quiz-solutions/module-03-quiz-solutions.md)
