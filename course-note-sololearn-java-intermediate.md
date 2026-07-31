@@ -4142,7 +4142,47 @@ catch (Exception e) {
 
 ### Lesson 03.13: Creating & Writing Files
 
+#### Creating Files
 
+Formatter, another useful class in the java.util package, is used to create content and write it to files.
+
+Example:
+
+```java
+import java.util.Formatter;
+
+public class MyClass {
+	public static void main(String[ ] args) {
+		try {
+			Formatter f = new Formatter("C:\\sololearn\\test.txt");
+		} catch (Exception e) {
+			System.out.println("Error");
+		}
+	}
+}
+```
+
+This creates an empty file at the specified path. If the file already exists, this will overwrite it.
+
+> :warning: Again, you need to surround the code with a try/catch block, as the operation can fail.
+
+#### Quiz 03.13.01
+
+**Question**
+
+Which class is used to write content to files?
+
+- [ ] Scanner
+- [ ] Formatter
+- [ ] ArrayList
+- [ ] Set
+
+**Answer**
+
+- [ ] Scanner
+- [x] Formatter
+- [ ] ArrayList
+- [ ] Set
 
 ### Quiz 03: Module 3 Quiz
 
