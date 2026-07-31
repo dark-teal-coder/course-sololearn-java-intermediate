@@ -4184,6 +4184,71 @@ Which class is used to write content to files?
 - [ ] ArrayList
 - [ ] Set
 
+#### Writing to Files
+
+Once the file is created, you can write content to it using the same Formatter object's format() method.
+
+Example:
+
+```java
+import java.io.File;
+import java.util.Scanner;
+import java.util.Formatter;
+
+public class MyClass {
+	public static void main(String[ ] args) {
+		try {
+			Formatter f = new Formatter("test.txt");
+			f.format("%s %s %s", "1","John", "Smith \r\n");
+			f.format("%s %s %s", "2","Amy", "Brown");
+			f.close();
+			
+			File x = new File("test.txt");
+			Scanner sc = new Scanner(x);
+			while(sc.hasNext()) {
+				System.out.println(sc.next());
+			}
+			sc.close();
+		} catch (Exception e) {
+			System.out.println("Error");
+		}
+	}
+}
+```
+
+The <b>format()</b> method formats its parameters according to its first parameter.
+
+%s mean a string and get's replaced by the first parameter after the format. The second %s get's replaced by the next one, and so on. So, the format %s %s %s denotes three strings that are separated with spaces.
+
+Note: \r\n is the newline symbol in Windows.
+
+The code above creates a file with the following content:
+
+```
+1 John Smith
+2 Amy Brown
+```
+
+> :warning: Don't forget to close the file once you're finished writing to it!
+
+#### Quiz 03.13.02
+
+**Question**
+
+Rearrange the code to write "Hi there" to the file.
+
+- `f.format("%s", "there");`
+- `Formatter f = new Formatter("a.txt");`
+- `f.format("%s", "Hi");`
+- `f.close()`
+
+**Answer**
+
+- `Formatter f = new Formatter("a.txt");`
+- `f.format("%s", "Hi");`
+- `f.format("%s", "there");`
+- `f.close()`
+
 ### Quiz 03: Module 3 Quiz
 
 
